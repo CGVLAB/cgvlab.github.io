@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/theme/images/icons/apple-touch-icon.png?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/theme/images/icons/favicon-32x32.png?v=1">
+  <link rel="icon" type="image/png" sizes="194x194" href="/theme/images/icons/favicon-194x194.png?v=1">
+  <link rel="icon" type="image/png" sizes="192x192"
+    href="/theme/images/icons/android-chrome-192x192.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/theme/images/icons/favicon-16x16.png?v=1">
+  <link rel="manifest" href="/theme/images/icons/site.webmanifest?v=1">
+  <link rel="mask-icon" href="/theme/images/icons/safari-pinned-tab.svg?v=1" color="#000000">
+  <link rel="shortcut icon" href="/theme/images/icons/favicon.ico?v=1">
+
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-TileImage" content="/theme/images/icons/mstile-144x144.png?v=1">
+  <meta name="msapplication-config" content="/theme/images/icons/browserconfig.xml?v=1">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="stylesheet" href="/theme/css/main.css">
+
+  <script src="/dependencies/js/jquery/jquery-3.5.1.min.js"></script>
+  <script src="/dependencies/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>An algorithm for automatic dormant tree pruning (Publication) | CGVLab</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="An algorithm for automatic dormant tree pruning (Publication)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="[“Kolmani\v{c}, Simon, et al. “An Algorithm for Automatic Dormant Tree Pruning.” Applied Soft Computing, 2020, p. 106931, doi:https://doi.org/10.1016/j.asoc.2020.106931.”]" />
+<meta property="og:description" content="[“Kolmani\v{c}, Simon, et al. “An Algorithm for Automatic Dormant Tree Pruning.” Applied Soft Computing, 2020, p. 106931, doi:https://doi.org/10.1016/j.asoc.2020.106931.”]" />
+<link rel="canonical" href="https://cgvlab.purdue.edu/publications/Kolmanic20ASC/" />
+<meta property="og:url" content="https://cgvlab.purdue.edu/publications/Kolmanic20ASC/" />
+<meta property="og:site_name" content="CGVLab" />
+<meta property="og:image" content="https://cgvlab.purdue.edu/theme/images/icon.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://cgvlab.purdue.edu/theme/images/icon.png" />
+<meta property="twitter:title" content="An algorithm for automatic dormant tree pruning (Publication)" />
+<script type="application/ld+json">
+{"@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cgvlab.purdue.edu/theme/images/icon.png"}},"url":"https://cgvlab.purdue.edu/publications/Kolmanic20ASC/","headline":"An algorithm for automatic dormant tree pruning (Publication)","description":"[“Kolmani\\v{c}, Simon, et al. “An Algorithm for Automatic Dormant Tree Pruning.” Applied Soft Computing, 2020, p. 106931, doi:https://doi.org/10.1016/j.asoc.2020.106931.”]","image":"https://cgvlab.purdue.edu/theme/images/icon.png","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<a class="navbar-brand m-0 p-2" href="/">
+		<img src="/theme/images/icon.png" width="64" class="d-inline-block" alt="Icon">
+		<div class="d-inline-flex flex-column justify-content-center align-items-start ml-3">
+			<h1 class="text-primary m-0">CGVLab</h1>
+			<small class="text-muted mr-5 text-wrap">Computer Graphics and Visualization Laboratory at Purdue University</small>
+		</div>
+	</a>
+
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div id="navbarSupportedContent" class="collapse navbar-collapse">
+		<div class="mr-auto"></div>
+		<ul class="navbar-nav">
+			
+			<li class="nav-item mx-4">
+				
+				<a class="h5 nav-link text-primary " href="/">Home</a>
+			</li>
+			
+			<li class="nav-item mx-4">
+				
+				<a class="h5 nav-link text-primary " href="/news/">News</a>
+			</li>
+			
+			<li class="nav-item mx-4">
+				
+				<a class="h5 nav-link text-primary " href="/research/">Research</a>
+			</li>
+			
+			<li class="nav-item mx-4">
+				
+				<a class="h5 nav-link text-primary " href="/publications/">Publications</a>
+			</li>
+			
+			<li class="nav-item mx-4">
+				
+				<a class="h5 nav-link text-primary " href="/team/">Team</a>
+			</li>
+			
+		</ul>
+	</div>
+</nav>
+  <div id="main" class="container mx-auto p-4">
+    <div class="row">
+    <div class="col m-0 p-0">
+        <div class="row">
+    <div class="col-sm-3 text-center">
+        
+        <div class="p-2 bg-dark rounded">
+            <div class="embed-responsive embed-responsive-1by1">
+                <img src="/theme/images/default.png" class="embed-responsive-item card-img-top rounded"
+                    style="object-fit: cover;" alt="">
+            </div>
+        </div>
+        <button class="btn btn-dark my-2" onclick="$('#bibtex').toggle()">BibTeX</button>
+    </div>
+    <div class="col-sm-9">
+        <h1>An algorithm for automatic dormant tree pruning</h1>
+        
+        <span class="text-dark my-2" style="font-size: 0;">
+            
+            
+            
+
+            
+            
+
+            
+            <span class="text-dark" style="font-size: medium">Simon Kolmani\v{c}</span>
+            
+
+            
+            
+            <span class="text-dark" style="font-size: medium">,&nbsp;</span>
+            
+            
+
+            
+
+            
+
+            
+            
+
+            
+            <span class="text-dark" style="font-size: medium">Damjan Strnad</span>
+            
+
+            
+            
+            <span class="text-dark" style="font-size: medium">,&nbsp;</span>
+            
+            
+
+            
+
+            
+
+            
+            
+
+            
+            <span class="text-dark" style="font-size: medium"> Kohek</span>
+            
+
+            
+            
+            <span class="text-dark" style="font-size: medium">,&nbsp;</span>
+            
+            
+
+            
+
+            
+
+            
+            
+
+            
+            <a class="text-primary" style="font-size: medium" href="/team/bedrich-benes">Bedrich Benes</a>
+            
+
+            
+            
+            <span class="text-dark" style="font-size: medium">,&nbsp;</span>
+            
+            
+
+            
+
+            
+
+            
+            
+
+            
+            <span class="text-dark" style="font-size: medium">Peter Hirst</span>
+            
+
+            
+            
+            <span class="text-dark" style="font-size: medium">,&nbsp;</span>
+            
+            
+
+            
+            <span class="text-dark" style="font-size: medium">and&nbsp;</span>
+            
+
+            
+
+            
+            
+
+            
+            <span class="text-dark" style="font-size: medium">Borut \v{Z}alik</span>
+            
+
+            
+
+            
+
+            
+        </span>
+        <br>
+        <p class="text-muted">
+            Applied Soft Computing - 2020
+        </p>
+        <hr>
+        <p class="text-dark">Kolmani\v{c}, Simon, et al. “An Algorithm for Automatic Dormant Tree Pruning.” Applied Soft Computing, 2020, p. 106931, doi:https://doi.org/10.1016/j.asoc.2020.106931.</p>
+        <pre id="bibtex" style="display: none;">@article{Kolmanic20ASC,
+  title = {An algorithm for automatic dormant tree pruning},
+  author = {Kolmani\v{c}, Simon and Strnad, Damjan and \v{S}tefan Kohek and Benes, Bedrich and Hirst, Peter and \v{Z}alik, Borut},
+  year = {2020},
+  journal = {Applied Soft Computing},
+  pages = {106931},
+  doi = {https://doi.org/10.1016/j.asoc.2020.106931},
+  issn = {1568-4946},
+  url = {http://www.sciencedirect.com/science/article/pii/S1568494620308693},
+  owner = {Kolmanic20ASC.jpg},
+  pdf = {../papers/Kolmanic20ASC.pdf}
+}
+</pre>
+    </div>
+</div>
+<hr>
+
+<div class="row">
+    <div class="col">
+        
+        <iframe src="/resources/papers/../papers/Kolmanic20ASC.pdf" type="application/pdf"
+            width="100%" height="1024px">
+            <a href="/resources/papers/../papers/Kolmanic20ASC.pdf">View PDF File</a>
+        </iframe>
+        
+    </div>
+</div>
+    </div>
+</div>
+  </div>
+  <div class="footer container-fluid px-3 py-3 mt-auto bg-dark">
+	<div class="row justify-content-center">
+		<div class="col-sm-4">
+			<strong class="text-light">CGVLab Website</strong>
+			<p class="text-light m-0">Copyright &copy; 21 CGVLab. Site made with <a
+					href="https://jekyllrb.com">Jekyll</a>.
+			</p>
+			<p class="text-light">(<a href="http://wiki.cs.purdue.edu/cgvlab/doku.php">Internal Lab Wiki</a>)</p>
+		</div>
+		<div class="col-sm-4">
+			<strong class="text-light">Funding</strong>
+			<p class="text-light m-0">
+				XXX funding info XXX
+			</p>
+			<p class="text-light">We are part of the <a href="https://www.cs.purdue.edu/">Department of Computer Science</a> at  <a href="https://www.purdue.edu/">Purdue University</a>.
+			</p>
+		</div>
+		<div class="col-sm-4">
+			<strong class="text-light">Address</strong>
+			<p class="text-light m-0">Lawson Computer Science Building (LWSN) Room 3151, Purdue University</p>
+			<p class="text-light m-0">305 N. University Street, West Lafayette,
+				IN 47907</p>
+			<p class="text-light m-0">(<a href="https://goo.gl/maps/kWo74ytXx42Mv5TD8" target="_blank">Map</a>)</p>
+			
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
