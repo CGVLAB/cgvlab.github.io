@@ -23,8 +23,9 @@
 
   <link rel="stylesheet" href="/theme/css/main.css">
 
-  <script src="/dependencies/js/jquery/jquery-3.5.1.min.js"></script>
+  <script src="/dependencies/js/jquery/jquery-3.6.0.min.js"></script>
   <script src="/dependencies/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="/dependencies/js/jquery/pagination.min.js"></script>
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Daniel Andersen (Former member - Research Scientist (Facebook Reality Labs) at Facebook) | CGVLab</title>
@@ -41,67 +42,89 @@
 <meta property="twitter:image" content="https://cgvlab.purdue.edu/theme/images/icon.png" />
 <meta property="twitter:title" content="Daniel Andersen (Former member - Research Scientist (Facebook Reality Labs) at Facebook)" />
 <script type="application/ld+json">
-{"@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cgvlab.purdue.edu/theme/images/icon.png"}},"url":"https://cgvlab.purdue.edu/team/daniel-andersen/","headline":"Daniel Andersen (Former member - Research Scientist (Facebook Reality Labs) at Facebook)","description":"Former member - Research Scientist (Facebook Reality Labs) at Facebook","image":"https://cgvlab.purdue.edu/theme/images/icon.png","@context":"https://schema.org"}</script>
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cgvlab.purdue.edu/theme/images/icon.png"}},"description":"Former member - Research Scientist (Facebook Reality Labs) at Facebook","@type":"WebPage","url":"https://cgvlab.purdue.edu/team/daniel-andersen/","headline":"Daniel Andersen (Former member - Research Scientist (Facebook Reality Labs) at Facebook)","image":"https://cgvlab.purdue.edu/theme/images/icon.png","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-</head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	<a class="navbar-brand m-0 p-2" href="/">
-		<img src="/theme/images/icon.png" width="64" class="d-inline-block" alt="Icon">
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-82472331-1', 'auto');
+	ga('send', 'pageview', { 'page': location.pathname + location.search + location.hash});
+	ga('set', 'anonymizeIp', false);
+    </script>
+    <!-- End Google Analytics -->
+    </head>
+
+<body class="bg-light text-dark">
+  <div class="container-fluid bg-dark border-bottom border-primary lab-border">
+	<nav class="navbar container navbar-expand-lg navbar-dark">
+		<a class="navbar-brand m-0 p-2" href="/">
+			<img src="/theme/images/icon.png" width="64" class="d-inline-block" alt="Icon">
+		</a>
 		<div class="d-inline-flex flex-column justify-content-center align-items-start ml-3">
 			<h1 class="text-primary m-0">CGVLab</h1>
-			<small class="text-muted mr-5 text-wrap">Computer Graphics and Visualization Laboratory at Purdue University</small>
+			<a class="lab-single-link-muted mr-5 text-wrap" href="https://cs.purdue.edu"
+				target="_blank">Department of Computer Science at Purdue University</a>
 		</div>
-	</a>
+	
+		<button class="navbar-toggler m-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	
+		<div id="navbarSupportedContent" class="collapse navbar-collapse">
+			<div class="mr-auto"></div>
+			<ul class="navbar-nav">
+				
+				<li class="nav-item mx-3">
+					
+					<a class="h5 nav-link lab-nav-link m-0 " href="/">Home</a>
+				</li>
+				
+				<li class="nav-item mx-3">
+					
+					<a class="h5 nav-link lab-nav-link m-0 " href="/news/">News</a>
+				</li>
+				
+				<li class="nav-item mx-3">
+					
+					<a class="h5 nav-link lab-nav-link m-0 " href="/research/">Research</a>
+				</li>
+				
+				<li class="nav-item mx-3">
+					
+					<a class="h5 nav-link lab-nav-link m-0 " href="/publications/">Publications</a>
+				</li>
+				
+				<li class="nav-item mx-3">
+					
+					<a class="h5 nav-link lab-nav-link m-0 " href="/team/">Team</a>
+				</li>
+				
+				<li class="nav-item mx-3">
+					
+					<a class="h5 nav-link lab-nav-link m-0 " href="/classes/">Classes</a>
+				</li>
+				
+			</ul>
+		</div>
+	</nav>
+</div>
 
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-		aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-
-	<div id="navbarSupportedContent" class="collapse navbar-collapse">
-		<div class="mr-auto"></div>
-		<ul class="navbar-nav">
-			
-			<li class="nav-item mx-4">
-				
-				<a class="h5 nav-link text-primary " href="/">Home</a>
-			</li>
-			
-			<li class="nav-item mx-4">
-				
-				<a class="h5 nav-link text-primary " href="/news/">News</a>
-			</li>
-			
-			<li class="nav-item mx-4">
-				
-				<a class="h5 nav-link text-primary " href="/research/">Research</a>
-			</li>
-			
-			<li class="nav-item mx-4">
-				
-				<a class="h5 nav-link text-primary " href="/publications/">Publications</a>
-			</li>
-			
-			<li class="nav-item mx-4">
-				
-				<a class="h5 nav-link text-primary " href="/team/">Team</a>
-			</li>
-			
-		</ul>
-	</div>
-</nav>
-  <div id="main" class="container mx-auto p-4">
+  <div id="lab-main" class="container bg-light text-dark mx-auto my-3">
     <div class="row">
-    <div class="col m-0 p-0">
+    <div class="col">
         <div class="row">
     <div class="col-sm-3">
         
-        <div class="p-2 bg-dark rounded" href="https://dan.andersen.name/">
+        <div class="p-2 bg-dark text-light" href="https://dan.andersen.name/">
             <div class="embed-responsive embed-responsive-1by1">
-                <img src="/resources/images/team/anderson_daniel.jpg" class="embed-responsive-item card-img-top rounded"
+                <img src="/resources/images/team/anderson_daniel.jpg" class="embed-responsive-item card-img-top"
                     style="object-fit: cover;" alt="Daniel Andersen">
             </div>
         </div>
@@ -135,86 +158,8 @@
 
         
 
-        <h2>Publications (14 Total)</h2>
+        <h2>Publications (14)</h2>
 
-        
-        
-        
-        <h3>Highlighted</h3>
-        <div class="container-fluid">
-            <ul class="bibliography"><li><div id="andersen2018ar" class="row my-2">
-    
-
-    
-    <div class="col card border-dark">
-        <div class="row no-gutters align-items-center">
-            <div class="col-md-2" href="/publications/andersen2018ar">
-                <div class="m-1 p-1 bg-dark rounded">
-                    <div class="embed-responsive embed-responsive-1by1">
-                        <img src="/resources/images/supplemental/default.png"
-                            class="embed-responsive-item rounded" style="object-fit: cover;"
-                            loading="lazy" >
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-10">
-                <div class="card-body">
-                    <a id="andersen2018ar-title" class="h5 card-title"
-                        href="/publications/andersen2018ar">An AR-guided system for fast image-based modeling of indoor scenes (Andersen
-                        et al. 2018)</a>
-                    <p class="card-text">
-                        <p id="andersen2018ar-reference"><em><span id="andersen2018ar">Andersen, D., &amp; Popescu, V. (2018). An AR-guided system for fast image-based modeling of indoor scenes. <i>2018 IEEE Conference on Virtual Reality and 3D User Interfaces (VR)</i>, 501–502. https://doi.org/10.1109/VR.2018.8446560</span></em></p>
-                        <p><strong><a href=""></a></strong></p>
-
-                        
-
-                        <button class="btn btn-dark" onclick="$('#bibtex-andersen2018ar').toggle()">BibTeX</button>
-
-                        
-                        <a href="http://doi.org/10.1109/VR.2018.8446560">
-                            <input class="btn btn-outline-dark" type="button" value="DOI" />
-                        </a>
-                        
-
-                        
-                        <a href="/resources/papers/Andersen-IEEEVR-2018-Augmented_Modeling_Indoor_Scenes.pdf" target="_blank">
-                            <input class="btn btn-outline-dark" type="button" value="PDF" />
-                        </a>
-                        
-
-                        
-
-                        
-
-                        
-                    </p>
-
-                    <div id="bibtex-andersen2018ar" style="display: none;">
-                        <pre>@inproceedings{andersen2018ar,
-  title = {An AR-guided system for fast image-based modeling of indoor scenes},
-  author = {Andersen, Daniel and Popescu, Voicu},
-  booktitle = {2018 IEEE Conference on Virtual Reality and 3D User Interfaces (VR)},
-  pages = {501--502},
-  year = {2018},
-  organization = {IEEE},
-  highlighted = {true},
-  doi = {10.1109/VR.2018.8446560},
-  pdf = {Andersen-IEEEVR-2018-Augmented_Modeling_Indoor_Scenes.pdf}
-}
-</pre>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
-        if (publications)
-            publications.push({"key":"andersen2018ar", "type":"inproceedings", "bibtex":"@inproceedings{andersen2018ar,\n  title = {An AR-guided system for fast image-based modeling of indoor scenes},\n  author = {Andersen, Daniel and Popescu, Voicu},\n  booktitle = {2018 IEEE Conference on Virtual Reality and 3D User Interfaces (VR)},\n  pages = {501--502},\n  year = {2018},\n  organization = {IEEE},\n  highlighted = {true},\n  doi = {10.1109/VR.2018.8446560},\n  pdf = {Andersen-IEEEVR-2018-Augmented_Modeling_Indoor_Scenes.pdf}\n}\n", "title":"An AR-guided system for fast image-based modeling of indoor scenes", "author":"Andersen, Daniel and Popescu, Voicu", "author_array":[{"first":"Daniel", "last":"Andersen", "prefix":"", "suffix":""}, {"first":"Voicu", "last":"Popescu", "prefix":"", "suffix":""}], "author_0_first":"Daniel", "author_0_last":"Andersen", "author_0_prefix":"", "author_0_suffix":"", "author_1_first":"Voicu", "author_1_last":"Popescu", "author_1_prefix":"", "author_1_suffix":"", "booktitle":"2018 IEEE Conference on Virtual Reality and 3D User Interfaces (VR)", "pages":"501–502", "year":"2018", "organization":"IEEE", "highlighted":"true", "doi":"10.1109/VR.2018.8446560", "pdf":"Andersen-IEEEVR-2018-Augmented_Modeling_Indoor_Scenes.pdf"});
-    </script>
-</div></li></ul>
-        </div>
-        
-        <hr>
         
         
         
@@ -226,27 +171,22 @@
     
 
     
-    <div class="col card border-dark">
-        <div class="row no-gutters align-items-center">
-            <div class="col-md-1" href="/publications/andersenar">
-                <div class="m-1 p-1 bg-dark rounded">
-                    <div class="embed-responsive embed-responsive-1by1">
-                        <img src="/resources/images/supplemental/default.png"
-                            class="embed-responsive-item rounded" style="object-fit: cover;"
-                            loading="lazy" >
-                    </div>
-                </div>
+    
+    <div class="card m-1">
+        <div class="row no-gutters">
+            <div class="col-xs p-3" href="/publications/andersenar">
+                <img src="/resources/images/supplemental/andersen2020ar.jpg"
+                    class="card-img border border-dark lab-img-square" >
             </div>
-            <div class="col-md-11">
-                <div class="card-body">
-                    <a id="andersenar-title" class="h5 card-title"
-                        href="/publications/andersenar">AR Interfaces for Mid-Air 6-DoF Alignment: Ergonomics-Aware Design and Evaluation (Andersen
+            <div class="col">
+                <div class="card-body p-3">
+                    <a id="andersenar-title" class="h5 card-title" href="/publications/andersenar"
+                        target="_blank">AR Interfaces for Mid-Air 6-DoF Alignment: Ergonomics-Aware Design and Evaluation (Andersen
                         et al. 2020)</a>
                     <p class="card-text">
                         <p id="andersenar-reference"><em><span id="andersenar">Andersen, D., &amp; Popescu, V. (2020). <i>AR Interfaces for Mid-Air 6-DoF Alignment: Ergonomics-Aware Design and Evaluation</i>.</span></em></p>
-                        <p><strong><a href=""></a></strong></p>
-
-                        
+                        <p><strong><a href="" target="_blank"></a></strong>
+                        </p>
 
                         <button class="btn btn-dark" onclick="$('#bibtex-andersenar').toggle()">BibTeX</button>
 
@@ -263,6 +203,8 @@
                         
 
                         
+
+                        
                     </p>
 
                     <div id="bibtex-andersenar" style="display: none;">
@@ -270,6 +212,7 @@
   title = {AR Interfaces for Mid-Air 6-DoF Alignment: Ergonomics-Aware Design and Evaluation},
   author = {Andersen, Daniel and Popescu, Voicu},
   year = {2020},
+  image = {andersen2020ar.jpg},
   pdf = {Andersen-ISMAR-2020-Ergonomic_aware_design_and_Evaluation.pdf}
 }
 </pre>
@@ -280,39 +223,34 @@
     </div>
     <script>
         if (publications)
-            publications.push({"key":"andersenar", "type":"article", "bibtex":"@article{andersenar,\n  title = {AR Interfaces for Mid-Air 6-DoF Alignment: Ergonomics-Aware Design and Evaluation},\n  author = {Andersen, Daniel and Popescu, Voicu},\n  year = {2020},\n  pdf = {Andersen-ISMAR-2020-Ergonomic_aware_design_and_Evaluation.pdf}\n}\n", "title":"AR Interfaces for Mid-Air 6-DoF Alignment: Ergonomics-Aware Design and Evaluation", "author":"Andersen, Daniel and Popescu, Voicu", "author_array":[{"first":"Daniel", "last":"Andersen", "prefix":"", "suffix":""}, {"first":"Voicu", "last":"Popescu", "prefix":"", "suffix":""}], "author_0_first":"Daniel", "author_0_last":"Andersen", "author_0_prefix":"", "author_0_suffix":"", "author_1_first":"Voicu", "author_1_last":"Popescu", "author_1_prefix":"", "author_1_suffix":"", "year":"2020", "pdf":"Andersen-ISMAR-2020-Ergonomic_aware_design_and_Evaluation.pdf"});
+            publications.push({"key":"andersenar", "type":"article", "bibtex":"@article{andersenar,\n  title = {AR Interfaces for Mid-Air 6-DoF Alignment: Ergonomics-Aware Design and Evaluation},\n  author = {Andersen, Daniel and Popescu, Voicu},\n  year = {2020},\n  image = {andersen2020ar.jpg},\n  pdf = {Andersen-ISMAR-2020-Ergonomic_aware_design_and_Evaluation.pdf}\n}\n", "title":"AR Interfaces for Mid-Air 6-DoF Alignment: Ergonomics-Aware Design and Evaluation", "author":"Andersen, Daniel and Popescu, Voicu", "author_array":[{"first":"Daniel", "last":"Andersen", "prefix":"", "suffix":""}, {"first":"Voicu", "last":"Popescu", "prefix":"", "suffix":""}], "author_0_first":"Daniel", "author_0_last":"Andersen", "author_0_prefix":"", "author_0_suffix":"", "author_1_first":"Voicu", "author_1_last":"Popescu", "author_1_prefix":"", "author_1_suffix":"", "year":"2020", "image":"andersen2020ar.jpg", "pdf":"Andersen-ISMAR-2020-Ergonomic_aware_design_and_Evaluation.pdf"});
     </script>
 </div></li>
 <li><div id="lin2020mentor" class="row my-2">
     
 
     
-    <div class="col card border-dark">
-        <div class="row no-gutters align-items-center">
-            <div class="col-md-1" href="/publications/lin2020mentor">
-                <div class="m-1 p-1 bg-dark rounded">
-                    <div class="embed-responsive embed-responsive-1by1">
-                        <img src="/resources/images/supplemental/default.png"
-                            class="embed-responsive-item rounded" style="object-fit: cover;"
-                            loading="lazy" >
-                    </div>
-                </div>
+    
+    <div class="card m-1">
+        <div class="row no-gutters">
+            <div class="col-xs p-3" href="/publications/lin2020mentor">
+                <img src="/resources/images/supplemental/lin2020mentor.jpg"
+                    class="card-img border border-dark lab-img-square" >
             </div>
-            <div class="col-md-11">
-                <div class="card-body">
-                    <a id="lin2020mentor-title" class="h5 card-title"
-                        href="/publications/lin2020mentor">How about the mentor? Effective Workspace Visualization in AR Telementoring (Lin
+            <div class="col">
+                <div class="card-body p-3">
+                    <a id="lin2020mentor-title" class="h5 card-title" href="/publications/lin2020mentor"
+                        target="_blank">How about the mentor? Effective Workspace Visualization in AR Telementoring (Lin
                         et al. 2020)</a>
                     <p class="card-text">
                         <p id="lin2020mentor-reference"><em><span id="lin2020mentor">Lin, C., Rojas-Muñoz, E., Cabrera, M. E., Sanchez-Tamayo, N., Andersen, D., Popescu, V., Noguera, J. A. B., Zarzaur, B., Murphy, P., Anderson, K., &amp; others. (2020). How about the mentor? Effective Workspace Visualization in AR Telementoring. <i>2020 IEEE Conference on Virtual Reality and 3D User Interfaces (VR)</i>, 212–220. https://doi.org/10.1109/VR46266.2020.00040</span></em></p>
-                        <p><strong><a href=""></a></strong></p>
-
-                        
+                        <p><strong><a href="" target="_blank"></a></strong>
+                        </p>
 
                         <button class="btn btn-dark" onclick="$('#bibtex-lin2020mentor').toggle()">BibTeX</button>
 
                         
-                        <a href="http://doi.org/10.1109/VR46266.2020.00040">
+                        <a href="http://doi.org/10.1109/VR46266.2020.00040" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="DOI" />
                         </a>
                         
@@ -321,6 +259,8 @@
                         <a href="/resources/papers/Lin-IEEE-2020-Effective_workspace_Visualization_In_AR_Telementoring.pdf" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="PDF" />
                         </a>
+                        
+
                         
 
                         
@@ -339,6 +279,7 @@
   year = {2020},
   organization = {IEEE},
   doi = {10.1109/VR46266.2020.00040},
+  image = {lin2020mentor.jpg},
   pdf = {Lin-IEEE-2020-Effective_workspace_Visualization_In_AR_Telementoring.pdf}
 }
 </pre>
@@ -349,39 +290,34 @@
     </div>
     <script>
         if (publications)
-            publications.push({"key":"lin2020mentor", "type":"inproceedings", "bibtex":"@inproceedings{lin2020mentor,\n  title = {How about the mentor? Effective Workspace Visualization in AR Telementoring},\n  author = {Lin, Chengyuan and Rojas-Mu{\\~n}oz, Edgar and Cabrera, Maria Eugenia and Sanchez-Tamayo, Natalia and Andersen, Daniel and Popescu, Voicu and Noguera, Juan Antonio Barragan and Zarzaur, Ben and Murphy, Pat and Anderson, Kathryn and others},\n  booktitle = {2020 IEEE Conference on Virtual Reality and 3D User Interfaces (VR)},\n  pages = {212--220},\n  year = {2020},\n  organization = {IEEE},\n  doi = {10.1109/VR46266.2020.00040},\n  pdf = {Lin-IEEE-2020-Effective_workspace_Visualization_In_AR_Telementoring.pdf}\n}\n", "title":"How about the mentor? Effective Workspace Visualization in AR Telementoring", "author":"Lin, Chengyuan and Rojas-Muñoz, Edgar and Cabrera, Maria Eugenia and Sanchez-Tamayo, Natalia and Andersen, Daniel and Popescu, Voicu and Noguera, Juan Antonio Barragan and Zarzaur, Ben and Murphy, Pat and Anderson, Kathryn and others", "author_array":[{"first":"Chengyuan", "last":"Lin", "prefix":"", "suffix":""}, {"first":"Edgar", "last":"Rojas-Muñoz", "prefix":"", "suffix":""}, {"first":"Maria Eugenia", "last":"Cabrera", "prefix":"", "suffix":""}, {"first":"Natalia", "last":"Sanchez-Tamayo", "prefix":"", "suffix":""}, {"first":"Daniel", "last":"Andersen", "prefix":"", "suffix":""}, {"first":"Voicu", "last":"Popescu", "prefix":"", "suffix":""}, {"first":"Juan Antonio Barragan", "last":"Noguera", "prefix":"", "suffix":""}, {"first":"Ben", "last":"Zarzaur", "prefix":"", "suffix":""}, {"first":"Pat", "last":"Murphy", "prefix":"", "suffix":""}, {"first":"Kathryn", "last":"Anderson", "prefix":"", "suffix":""}, {"first":"", "last":"others", "prefix":"", "suffix":""}], "author_0_first":"Chengyuan", "author_0_last":"Lin", "author_0_prefix":"", "author_0_suffix":"", "author_1_first":"Edgar", "author_1_last":"Rojas-Muñoz", "author_1_prefix":"", "author_1_suffix":"", "author_2_first":"Maria Eugenia", "author_2_last":"Cabrera", "author_2_prefix":"", "author_2_suffix":"", "author_3_first":"Natalia", "author_3_last":"Sanchez-Tamayo", "author_3_prefix":"", "author_3_suffix":"", "author_4_first":"Daniel", "author_4_last":"Andersen", "author_4_prefix":"", "author_4_suffix":"", "author_5_first":"Voicu", "author_5_last":"Popescu", "author_5_prefix":"", "author_5_suffix":"", "author_6_first":"Juan Antonio Barragan", "author_6_last":"Noguera", "author_6_prefix":"", "author_6_suffix":"", "author_7_first":"Ben", "author_7_last":"Zarzaur", "author_7_prefix":"", "author_7_suffix":"", "author_8_first":"Pat", "author_8_last":"Murphy", "author_8_prefix":"", "author_8_suffix":"", "author_9_first":"Kathryn", "author_9_last":"Anderson", "author_9_prefix":"", "author_9_suffix":"", "author_10_first":"", "author_10_last":"others", "author_10_prefix":"", "author_10_suffix":"", "booktitle":"2020 IEEE Conference on Virtual Reality and 3D User Interfaces (VR)", "pages":"212–220", "year":"2020", "organization":"IEEE", "doi":"10.1109/VR46266.2020.00040", "pdf":"Lin-IEEE-2020-Effective_workspace_Visualization_In_AR_Telementoring.pdf"});
+            publications.push({"key":"lin2020mentor", "type":"inproceedings", "bibtex":"@inproceedings{lin2020mentor,\n  title = {How about the mentor? Effective Workspace Visualization in AR Telementoring},\n  author = {Lin, Chengyuan and Rojas-Mu{\\~n}oz, Edgar and Cabrera, Maria Eugenia and Sanchez-Tamayo, Natalia and Andersen, Daniel and Popescu, Voicu and Noguera, Juan Antonio Barragan and Zarzaur, Ben and Murphy, Pat and Anderson, Kathryn and others},\n  booktitle = {2020 IEEE Conference on Virtual Reality and 3D User Interfaces (VR)},\n  pages = {212--220},\n  year = {2020},\n  organization = {IEEE},\n  doi = {10.1109/VR46266.2020.00040},\n  image = {lin2020mentor.jpg},\n  pdf = {Lin-IEEE-2020-Effective_workspace_Visualization_In_AR_Telementoring.pdf}\n}\n", "title":"How about the mentor? Effective Workspace Visualization in AR Telementoring", "author":"Lin, Chengyuan and Rojas-Muñoz, Edgar and Cabrera, Maria Eugenia and Sanchez-Tamayo, Natalia and Andersen, Daniel and Popescu, Voicu and Noguera, Juan Antonio Barragan and Zarzaur, Ben and Murphy, Pat and Anderson, Kathryn and others", "author_array":[{"first":"Chengyuan", "last":"Lin", "prefix":"", "suffix":""}, {"first":"Edgar", "last":"Rojas-Muñoz", "prefix":"", "suffix":""}, {"first":"Maria Eugenia", "last":"Cabrera", "prefix":"", "suffix":""}, {"first":"Natalia", "last":"Sanchez-Tamayo", "prefix":"", "suffix":""}, {"first":"Daniel", "last":"Andersen", "prefix":"", "suffix":""}, {"first":"Voicu", "last":"Popescu", "prefix":"", "suffix":""}, {"first":"Juan Antonio Barragan", "last":"Noguera", "prefix":"", "suffix":""}, {"first":"Ben", "last":"Zarzaur", "prefix":"", "suffix":""}, {"first":"Pat", "last":"Murphy", "prefix":"", "suffix":""}, {"first":"Kathryn", "last":"Anderson", "prefix":"", "suffix":""}, {"first":"", "last":"others", "prefix":"", "suffix":""}], "author_0_first":"Chengyuan", "author_0_last":"Lin", "author_0_prefix":"", "author_0_suffix":"", "author_1_first":"Edgar", "author_1_last":"Rojas-Muñoz", "author_1_prefix":"", "author_1_suffix":"", "author_2_first":"Maria Eugenia", "author_2_last":"Cabrera", "author_2_prefix":"", "author_2_suffix":"", "author_3_first":"Natalia", "author_3_last":"Sanchez-Tamayo", "author_3_prefix":"", "author_3_suffix":"", "author_4_first":"Daniel", "author_4_last":"Andersen", "author_4_prefix":"", "author_4_suffix":"", "author_5_first":"Voicu", "author_5_last":"Popescu", "author_5_prefix":"", "author_5_suffix":"", "author_6_first":"Juan Antonio Barragan", "author_6_last":"Noguera", "author_6_prefix":"", "author_6_suffix":"", "author_7_first":"Ben", "author_7_last":"Zarzaur", "author_7_prefix":"", "author_7_suffix":"", "author_8_first":"Pat", "author_8_last":"Murphy", "author_8_prefix":"", "author_8_suffix":"", "author_9_first":"Kathryn", "author_9_last":"Anderson", "author_9_prefix":"", "author_9_suffix":"", "author_10_first":"", "author_10_last":"others", "author_10_prefix":"", "author_10_suffix":"", "booktitle":"2020 IEEE Conference on Virtual Reality and 3D User Interfaces (VR)", "pages":"212–220", "year":"2020", "organization":"IEEE", "doi":"10.1109/VR46266.2020.00040", "image":"lin2020mentor.jpg", "pdf":"Lin-IEEE-2020-Effective_workspace_Visualization_In_AR_Telementoring.pdf"});
     </script>
 </div></li>
 <li><div id="rojas2020evaluation" class="row my-2">
     
 
     
-    <div class="col card border-dark">
-        <div class="row no-gutters align-items-center">
-            <div class="col-md-1" href="/publications/rojas2020evaluation">
-                <div class="m-1 p-1 bg-dark rounded">
-                    <div class="embed-responsive embed-responsive-1by1">
-                        <img src="/resources/images/supplemental/default.png"
-                            class="embed-responsive-item rounded" style="object-fit: cover;"
-                            loading="lazy" >
-                    </div>
-                </div>
+    
+    <div class="card m-1">
+        <div class="row no-gutters">
+            <div class="col-xs p-3" href="/publications/rojas2020evaluation">
+                <img src="/resources/images/supplemental/rojas2020evaluation.jpg"
+                    class="card-img border border-dark lab-img-square" >
             </div>
-            <div class="col-md-11">
-                <div class="card-body">
-                    <a id="rojas2020evaluation-title" class="h5 card-title"
-                        href="/publications/rojas2020evaluation">Evaluation of an augmented reality platform for austere surgical telementoring: a randomized controlled crossover study in cricothyroidotomies (Rojas-Muñoz
+            <div class="col">
+                <div class="card-body p-3">
+                    <a id="rojas2020evaluation-title" class="h5 card-title" href="/publications/rojas2020evaluation"
+                        target="_blank">Evaluation of an augmented reality platform for austere surgical telementoring: a randomized controlled crossover study in cricothyroidotomies (Rojas-Muñoz
                         et al. 2020)</a>
                     <p class="card-text">
                         <p id="rojas2020evaluation-reference"><em><span id="rojas2020evaluation">Rojas-Muñoz, E., Lin, C., Sanchez-Tamayo, N., Cabrera, M. E., Andersen, D., Popescu, V., Barragan, J. A., Zarzaur, B., Murphy, P., Anderson, K., &amp; others. (2020). Evaluation of an augmented reality platform for austere surgical telementoring: a randomized controlled crossover study in cricothyroidotomies. <i>NPJ Digital Medicine</i>, <i>3</i>(1), 1–9. https://doi.org/10.1038/s41746-020-0284-9</span></em></p>
-                        <p><strong><a href=""></a></strong></p>
-
-                        
+                        <p><strong><a href="" target="_blank"></a></strong>
+                        </p>
 
                         <button class="btn btn-dark" onclick="$('#bibtex-rojas2020evaluation').toggle()">BibTeX</button>
 
                         
-                        <a href="http://doi.org/10.1038/s41746-020-0284-9">
+                        <a href="http://doi.org/10.1038/s41746-020-0284-9" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="DOI" />
                         </a>
                         
@@ -390,6 +326,8 @@
                         <a href="/resources/papers/Rojas-NPJ-2020-a_randomized_constrolled_crossover_study_in_Cricothyroidotomies.pdf" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="PDF" />
                         </a>
+                        
+
                         
 
                         
@@ -410,6 +348,7 @@
   year = {2020},
   publisher = {Nature Publishing Group},
   doi = {10.1038/s41746-020-0284-9},
+  image = {rojas2020evaluation.jpg},
   pdf = {Rojas-NPJ-2020-a_randomized_constrolled_crossover_study_in_Cricothyroidotomies.pdf}
 }
 </pre>
@@ -420,39 +359,34 @@
     </div>
     <script>
         if (publications)
-            publications.push({"key":"rojas2020evaluation", "type":"article", "bibtex":"@article{rojas2020evaluation,\n  title = {Evaluation of an augmented reality platform for austere surgical telementoring: a randomized controlled crossover study in cricothyroidotomies},\n  author = {Rojas-Mu{\\~n}oz, Edgar and Lin, Chengyuan and Sanchez-Tamayo, Natalia and Cabrera, Maria Eugenia and Andersen, Daniel and Popescu, Voicu and Barragan, Juan Antonio and Zarzaur, Ben and Murphy, Patrick and Anderson, Kathryn and others},\n  journal = {NPJ Digital Medicine},\n  volume = {3},\n  number = {1},\n  pages = {1--9},\n  year = {2020},\n  publisher = {Nature Publishing Group},\n  doi = {10.1038/s41746-020-0284-9},\n  pdf = {Rojas-NPJ-2020-a_randomized_constrolled_crossover_study_in_Cricothyroidotomies.pdf}\n}\n", "title":"Evaluation of an augmented reality platform for austere surgical telementoring: a randomized controlled crossover study in cricothyroidotomies", "author":"Rojas-Muñoz, Edgar and Lin, Chengyuan and Sanchez-Tamayo, Natalia and Cabrera, Maria Eugenia and Andersen, Daniel and Popescu, Voicu and Barragan, Juan Antonio and Zarzaur, Ben and Murphy, Patrick and Anderson, Kathryn and others", "author_array":[{"first":"Edgar", "last":"Rojas-Muñoz", "prefix":"", "suffix":""}, {"first":"Chengyuan", "last":"Lin", "prefix":"", "suffix":""}, {"first":"Natalia", "last":"Sanchez-Tamayo", "prefix":"", "suffix":""}, {"first":"Maria Eugenia", "last":"Cabrera", "prefix":"", "suffix":""}, {"first":"Daniel", "last":"Andersen", "prefix":"", "suffix":""}, {"first":"Voicu", "last":"Popescu", "prefix":"", "suffix":""}, {"first":"Juan Antonio", "last":"Barragan", "prefix":"", "suffix":""}, {"first":"Ben", "last":"Zarzaur", "prefix":"", "suffix":""}, {"first":"Patrick", "last":"Murphy", "prefix":"", "suffix":""}, {"first":"Kathryn", "last":"Anderson", "prefix":"", "suffix":""}, {"first":"", "last":"others", "prefix":"", "suffix":""}], "author_0_first":"Edgar", "author_0_last":"Rojas-Muñoz", "author_0_prefix":"", "author_0_suffix":"", "author_1_first":"Chengyuan", "author_1_last":"Lin", "author_1_prefix":"", "author_1_suffix":"", "author_2_first":"Natalia", "author_2_last":"Sanchez-Tamayo", "author_2_prefix":"", "author_2_suffix":"", "author_3_first":"Maria Eugenia", "author_3_last":"Cabrera", "author_3_prefix":"", "author_3_suffix":"", "author_4_first":"Daniel", "author_4_last":"Andersen", "author_4_prefix":"", "author_4_suffix":"", "author_5_first":"Voicu", "author_5_last":"Popescu", "author_5_prefix":"", "author_5_suffix":"", "author_6_first":"Juan Antonio", "author_6_last":"Barragan", "author_6_prefix":"", "author_6_suffix":"", "author_7_first":"Ben", "author_7_last":"Zarzaur", "author_7_prefix":"", "author_7_suffix":"", "author_8_first":"Patrick", "author_8_last":"Murphy", "author_8_prefix":"", "author_8_suffix":"", "author_9_first":"Kathryn", "author_9_last":"Anderson", "author_9_prefix":"", "author_9_suffix":"", "author_10_first":"", "author_10_last":"others", "author_10_prefix":"", "author_10_suffix":"", "journal":"NPJ Digital Medicine", "volume":"3", "number":"1", "pages":"1–9", "year":"2020", "publisher":"Nature Publishing Group", "doi":"10.1038/s41746-020-0284-9", "pdf":"Rojas-NPJ-2020-a_randomized_constrolled_crossover_study_in_Cricothyroidotomies.pdf"});
+            publications.push({"key":"rojas2020evaluation", "type":"article", "bibtex":"@article{rojas2020evaluation,\n  title = {Evaluation of an augmented reality platform for austere surgical telementoring: a randomized controlled crossover study in cricothyroidotomies},\n  author = {Rojas-Mu{\\~n}oz, Edgar and Lin, Chengyuan and Sanchez-Tamayo, Natalia and Cabrera, Maria Eugenia and Andersen, Daniel and Popescu, Voicu and Barragan, Juan Antonio and Zarzaur, Ben and Murphy, Patrick and Anderson, Kathryn and others},\n  journal = {NPJ Digital Medicine},\n  volume = {3},\n  number = {1},\n  pages = {1--9},\n  year = {2020},\n  publisher = {Nature Publishing Group},\n  doi = {10.1038/s41746-020-0284-9},\n  image = {rojas2020evaluation.jpg},\n  pdf = {Rojas-NPJ-2020-a_randomized_constrolled_crossover_study_in_Cricothyroidotomies.pdf}\n}\n", "title":"Evaluation of an augmented reality platform for austere surgical telementoring: a randomized controlled crossover study in cricothyroidotomies", "author":"Rojas-Muñoz, Edgar and Lin, Chengyuan and Sanchez-Tamayo, Natalia and Cabrera, Maria Eugenia and Andersen, Daniel and Popescu, Voicu and Barragan, Juan Antonio and Zarzaur, Ben and Murphy, Patrick and Anderson, Kathryn and others", "author_array":[{"first":"Edgar", "last":"Rojas-Muñoz", "prefix":"", "suffix":""}, {"first":"Chengyuan", "last":"Lin", "prefix":"", "suffix":""}, {"first":"Natalia", "last":"Sanchez-Tamayo", "prefix":"", "suffix":""}, {"first":"Maria Eugenia", "last":"Cabrera", "prefix":"", "suffix":""}, {"first":"Daniel", "last":"Andersen", "prefix":"", "suffix":""}, {"first":"Voicu", "last":"Popescu", "prefix":"", "suffix":""}, {"first":"Juan Antonio", "last":"Barragan", "prefix":"", "suffix":""}, {"first":"Ben", "last":"Zarzaur", "prefix":"", "suffix":""}, {"first":"Patrick", "last":"Murphy", "prefix":"", "suffix":""}, {"first":"Kathryn", "last":"Anderson", "prefix":"", "suffix":""}, {"first":"", "last":"others", "prefix":"", "suffix":""}], "author_0_first":"Edgar", "author_0_last":"Rojas-Muñoz", "author_0_prefix":"", "author_0_suffix":"", "author_1_first":"Chengyuan", "author_1_last":"Lin", "author_1_prefix":"", "author_1_suffix":"", "author_2_first":"Natalia", "author_2_last":"Sanchez-Tamayo", "author_2_prefix":"", "author_2_suffix":"", "author_3_first":"Maria Eugenia", "author_3_last":"Cabrera", "author_3_prefix":"", "author_3_suffix":"", "author_4_first":"Daniel", "author_4_last":"Andersen", "author_4_prefix":"", "author_4_suffix":"", "author_5_first":"Voicu", "author_5_last":"Popescu", "author_5_prefix":"", "author_5_suffix":"", "author_6_first":"Juan Antonio", "author_6_last":"Barragan", "author_6_prefix":"", "author_6_suffix":"", "author_7_first":"Ben", "author_7_last":"Zarzaur", "author_7_prefix":"", "author_7_suffix":"", "author_8_first":"Patrick", "author_8_last":"Murphy", "author_8_prefix":"", "author_8_suffix":"", "author_9_first":"Kathryn", "author_9_last":"Anderson", "author_9_prefix":"", "author_9_suffix":"", "author_10_first":"", "author_10_last":"others", "author_10_prefix":"", "author_10_suffix":"", "journal":"NPJ Digital Medicine", "volume":"3", "number":"1", "pages":"1–9", "year":"2020", "publisher":"Nature Publishing Group", "doi":"10.1038/s41746-020-0284-9", "image":"rojas2020evaluation.jpg", "pdf":"Rojas-NPJ-2020-a_randomized_constrolled_crossover_study_in_Cricothyroidotomies.pdf"});
     </script>
 </div></li>
 <li><div id="rojas2020system" class="row my-2">
     
 
     
-    <div class="col card border-dark">
-        <div class="row no-gutters align-items-center">
-            <div class="col-md-1" href="/publications/rojas2020system">
-                <div class="m-1 p-1 bg-dark rounded">
-                    <div class="embed-responsive embed-responsive-1by1">
-                        <img src="/resources/images/supplemental/default.png"
-                            class="embed-responsive-item rounded" style="object-fit: cover;"
-                            loading="lazy" >
-                    </div>
-                </div>
+    
+    <div class="card m-1">
+        <div class="row no-gutters">
+            <div class="col-xs p-3" href="/publications/rojas2020system">
+                <img src="/resources/images/supplemental/rojas2020system.jpg"
+                    class="card-img border border-dark lab-img-square" >
             </div>
-            <div class="col-md-11">
-                <div class="card-body">
-                    <a id="rojas2020system-title" class="h5 card-title"
-                        href="/publications/rojas2020system">The System for Telementoring with Augmented Reality (STAR): A head-mounted display to improve surgical coaching and confidence in remote areas (Rojas-Muñoz
+            <div class="col">
+                <div class="card-body p-3">
+                    <a id="rojas2020system-title" class="h5 card-title" href="/publications/rojas2020system"
+                        target="_blank">The System for Telementoring with Augmented Reality (STAR): A head-mounted display to improve surgical coaching and confidence in remote areas (Rojas-Muñoz
                         et al. 2020)</a>
                     <p class="card-text">
                         <p id="rojas2020system-reference"><em><span id="rojas2020system">Rojas-Muñoz, E., Cabrera, M. E., Lin, C., Andersen, D., Popescu, V., Anderson, K., Zarzaur, B. L., Mullis, B., &amp; Wachs, J. P. (2020). The System for Telementoring with Augmented Reality (STAR): A head-mounted display to improve surgical coaching and confidence in remote areas. <i>Surgery</i>. https://doi.org/10.1016/j.surg.2019.11.008</span></em></p>
-                        <p><strong><a href=""></a></strong></p>
-
-                        
+                        <p><strong><a href="" target="_blank"></a></strong>
+                        </p>
 
                         <button class="btn btn-dark" onclick="$('#bibtex-rojas2020system').toggle()">BibTeX</button>
 
                         
-                        <a href="http://doi.org/10.1016/j.surg.2019.11.008">
+                        <a href="http://doi.org/10.1016/j.surg.2019.11.008" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="DOI" />
                         </a>
                         
@@ -461,6 +395,8 @@
                         <a href="/resources/papers/Rojas-Surgery-2020-The_System_for_telementoring_with_AR_Head_mounted_display.pdf" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="PDF" />
                         </a>
+                        
+
                         
 
                         
@@ -477,6 +413,7 @@
   journal = {Surgery},
   year = {2020},
   publisher = {Elsevier},
+  image = {rojas2020system.jpg},
   doi = {10.1016/j.surg.2019.11.008},
   pdf = {Rojas-Surgery-2020-The_System_for_telementoring_with_AR_Head_mounted_display.pdf}
 }
@@ -488,7 +425,7 @@
     </div>
     <script>
         if (publications)
-            publications.push({"key":"rojas2020system", "type":"article", "bibtex":"@article{rojas2020system,\n  title = {The System for Telementoring with Augmented Reality (STAR): A head-mounted display to improve surgical coaching and confidence in remote areas},\n  author = {Rojas-Mu{\\~n}oz, Edgar and Cabrera, Maria E and Lin, Chengyuan and Andersen, Daniel and Popescu, Voicu and Anderson, Kathryn and Zarzaur, Ben L and Mullis, Brian and Wachs, Juan P},\n  journal = {Surgery},\n  year = {2020},\n  publisher = {Elsevier},\n  doi = {10.1016/j.surg.2019.11.008},\n  pdf = {Rojas-Surgery-2020-The_System_for_telementoring_with_AR_Head_mounted_display.pdf}\n}\n", "title":"The System for Telementoring with Augmented Reality (STAR): A head-mounted display to improve surgical coaching and confidence in remote areas", "author":"Rojas-Muñoz, Edgar and Cabrera, Maria E and Lin, Chengyuan and Andersen, Daniel and Popescu, Voicu and Anderson, Kathryn and Zarzaur, Ben L and Mullis, Brian and Wachs, Juan P", "author_array":[{"first":"Edgar", "last":"Rojas-Muñoz", "prefix":"", "suffix":""}, {"first":"Maria E", "last":"Cabrera", "prefix":"", "suffix":""}, {"first":"Chengyuan", "last":"Lin", "prefix":"", "suffix":""}, {"first":"Daniel", "last":"Andersen", "prefix":"", "suffix":""}, {"first":"Voicu", "last":"Popescu", "prefix":"", "suffix":""}, {"first":"Kathryn", "last":"Anderson", "prefix":"", "suffix":""}, {"first":"Ben L", "last":"Zarzaur", "prefix":"", "suffix":""}, {"first":"Brian", "last":"Mullis", "prefix":"", "suffix":""}, {"first":"Juan P", "last":"Wachs", "prefix":"", "suffix":""}], "author_0_first":"Edgar", "author_0_last":"Rojas-Muñoz", "author_0_prefix":"", "author_0_suffix":"", "author_1_first":"Maria E", "author_1_last":"Cabrera", "author_1_prefix":"", "author_1_suffix":"", "author_2_first":"Chengyuan", "author_2_last":"Lin", "author_2_prefix":"", "author_2_suffix":"", "author_3_first":"Daniel", "author_3_last":"Andersen", "author_3_prefix":"", "author_3_suffix":"", "author_4_first":"Voicu", "author_4_last":"Popescu", "author_4_prefix":"", "author_4_suffix":"", "author_5_first":"Kathryn", "author_5_last":"Anderson", "author_5_prefix":"", "author_5_suffix":"", "author_6_first":"Ben L", "author_6_last":"Zarzaur", "author_6_prefix":"", "author_6_suffix":"", "author_7_first":"Brian", "author_7_last":"Mullis", "author_7_prefix":"", "author_7_suffix":"", "author_8_first":"Juan P", "author_8_last":"Wachs", "author_8_prefix":"", "author_8_suffix":"", "journal":"Surgery", "year":"2020", "publisher":"Elsevier", "doi":"10.1016/j.surg.2019.11.008", "pdf":"Rojas-Surgery-2020-The_System_for_telementoring_with_AR_Head_mounted_display.pdf"});
+            publications.push({"key":"rojas2020system", "type":"article", "bibtex":"@article{rojas2020system,\n  title = {The System for Telementoring with Augmented Reality (STAR): A head-mounted display to improve surgical coaching and confidence in remote areas},\n  author = {Rojas-Mu{\\~n}oz, Edgar and Cabrera, Maria E and Lin, Chengyuan and Andersen, Daniel and Popescu, Voicu and Anderson, Kathryn and Zarzaur, Ben L and Mullis, Brian and Wachs, Juan P},\n  journal = {Surgery},\n  year = {2020},\n  publisher = {Elsevier},\n  image = {rojas2020system.jpg},\n  doi = {10.1016/j.surg.2019.11.008},\n  pdf = {Rojas-Surgery-2020-The_System_for_telementoring_with_AR_Head_mounted_display.pdf}\n}\n", "title":"The System for Telementoring with Augmented Reality (STAR): A head-mounted display to improve surgical coaching and confidence in remote areas", "author":"Rojas-Muñoz, Edgar and Cabrera, Maria E and Lin, Chengyuan and Andersen, Daniel and Popescu, Voicu and Anderson, Kathryn and Zarzaur, Ben L and Mullis, Brian and Wachs, Juan P", "author_array":[{"first":"Edgar", "last":"Rojas-Muñoz", "prefix":"", "suffix":""}, {"first":"Maria E", "last":"Cabrera", "prefix":"", "suffix":""}, {"first":"Chengyuan", "last":"Lin", "prefix":"", "suffix":""}, {"first":"Daniel", "last":"Andersen", "prefix":"", "suffix":""}, {"first":"Voicu", "last":"Popescu", "prefix":"", "suffix":""}, {"first":"Kathryn", "last":"Anderson", "prefix":"", "suffix":""}, {"first":"Ben L", "last":"Zarzaur", "prefix":"", "suffix":""}, {"first":"Brian", "last":"Mullis", "prefix":"", "suffix":""}, {"first":"Juan P", "last":"Wachs", "prefix":"", "suffix":""}], "author_0_first":"Edgar", "author_0_last":"Rojas-Muñoz", "author_0_prefix":"", "author_0_suffix":"", "author_1_first":"Maria E", "author_1_last":"Cabrera", "author_1_prefix":"", "author_1_suffix":"", "author_2_first":"Chengyuan", "author_2_last":"Lin", "author_2_prefix":"", "author_2_suffix":"", "author_3_first":"Daniel", "author_3_last":"Andersen", "author_3_prefix":"", "author_3_suffix":"", "author_4_first":"Voicu", "author_4_last":"Popescu", "author_4_prefix":"", "author_4_suffix":"", "author_5_first":"Kathryn", "author_5_last":"Anderson", "author_5_prefix":"", "author_5_suffix":"", "author_6_first":"Ben L", "author_6_last":"Zarzaur", "author_6_prefix":"", "author_6_suffix":"", "author_7_first":"Brian", "author_7_last":"Mullis", "author_7_prefix":"", "author_7_suffix":"", "author_8_first":"Juan P", "author_8_last":"Wachs", "author_8_prefix":"", "author_8_suffix":"", "journal":"Surgery", "year":"2020", "publisher":"Elsevier", "image":"rojas2020system.jpg", "doi":"10.1016/j.surg.2019.11.008", "pdf":"Rojas-Surgery-2020-The_System_for_telementoring_with_AR_Head_mounted_display.pdf"});
     </script>
 </div></li></ul>
         </div>
@@ -508,32 +445,27 @@
     
 
     
-    <div class="col card border-dark">
-        <div class="row no-gutters align-items-center">
-            <div class="col-md-1" href="/publications/andersen2019ar">
-                <div class="m-1 p-1 bg-dark rounded">
-                    <div class="embed-responsive embed-responsive-1by1">
-                        <img src="/resources/images/supplemental/default.png"
-                            class="embed-responsive-item rounded" style="object-fit: cover;"
-                            loading="lazy" >
-                    </div>
-                </div>
+    
+    <div class="card m-1">
+        <div class="row no-gutters">
+            <div class="col-xs p-3" href="/publications/andersen2019ar">
+                <img src="/resources/images/supplemental/andersen2019ar.jpg"
+                    class="card-img border border-dark lab-img-square" >
             </div>
-            <div class="col-md-11">
-                <div class="card-body">
-                    <a id="andersen2019ar-title" class="h5 card-title"
-                        href="/publications/andersen2019ar">AR HMD Guidance for Controlled Hand-Held 3D Acquisition (Andersen
+            <div class="col">
+                <div class="card-body p-3">
+                    <a id="andersen2019ar-title" class="h5 card-title" href="/publications/andersen2019ar"
+                        target="_blank">AR HMD Guidance for Controlled Hand-Held 3D Acquisition (Andersen
                         et al. 2019)</a>
                     <p class="card-text">
                         <p id="andersen2019ar-reference"><em><span id="andersen2019ar">Andersen, D., Villano, P., &amp; Popescu, V. (2019). AR HMD Guidance for Controlled Hand-Held 3D Acquisition. <i>IEEE Transactions on Visualization and Computer Graphics</i>, <i>25</i>(11), 3073–3082. https://doi.org/10.1109/TVCG.2019.2932172</span></em></p>
-                        <p><strong><a href=""></a></strong></p>
-
-                        
+                        <p><strong><a href="" target="_blank"></a></strong>
+                        </p>
 
                         <button class="btn btn-dark" onclick="$('#bibtex-andersen2019ar').toggle()">BibTeX</button>
 
                         
-                        <a href="http://doi.org/10.1109/TVCG.2019.2932172">
+                        <a href="http://doi.org/10.1109/TVCG.2019.2932172" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="DOI" />
                         </a>
                         
@@ -542,6 +474,8 @@
                         <a href="/resources/papers/Anderson-IEEE-2019-AR_HMD_Guidence_for_Controlled_Hand_Held_3d_Acquisition.pdf" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="PDF" />
                         </a>
+                        
+
                         
 
                         
@@ -562,6 +496,7 @@
   year = {2019},
   publisher = {IEEE},
   doi = {10.1109/TVCG.2019.2932172},
+  image = {andersen2019ar.jpg},
   pdf = {Anderson-IEEE-2019-AR_HMD_Guidence_for_Controlled_Hand_Held_3d_Acquisition.pdf}
 }
 </pre>
@@ -572,39 +507,34 @@
     </div>
     <script>
         if (publications)
-            publications.push({"key":"andersen2019ar", "type":"article", "bibtex":"@article{andersen2019ar,\n  title = {AR HMD Guidance for Controlled Hand-Held 3D Acquisition},\n  author = {Andersen, Daniel and Villano, Peter and Popescu, Voicu},\n  journal = {IEEE transactions on visualization and computer graphics},\n  volume = {25},\n  number = {11},\n  pages = {3073--3082},\n  year = {2019},\n  publisher = {IEEE},\n  doi = {10.1109/TVCG.2019.2932172},\n  pdf = {Anderson-IEEE-2019-AR_HMD_Guidence_for_Controlled_Hand_Held_3d_Acquisition.pdf}\n}\n", "title":"AR HMD Guidance for Controlled Hand-Held 3D Acquisition", "author":"Andersen, Daniel and Villano, Peter and Popescu, Voicu", "author_array":[{"first":"Daniel", "last":"Andersen", "prefix":"", "suffix":""}, {"first":"Peter", "last":"Villano", "prefix":"", "suffix":""}, {"first":"Voicu", "last":"Popescu", "prefix":"", "suffix":""}], "author_0_first":"Daniel", "author_0_last":"Andersen", "author_0_prefix":"", "author_0_suffix":"", "author_1_first":"Peter", "author_1_last":"Villano", "author_1_prefix":"", "author_1_suffix":"", "author_2_first":"Voicu", "author_2_last":"Popescu", "author_2_prefix":"", "author_2_suffix":"", "journal":"IEEE transactions on visualization and computer graphics", "volume":"25", "number":"11", "pages":"3073–3082", "year":"2019", "publisher":"IEEE", "doi":"10.1109/TVCG.2019.2932172", "pdf":"Anderson-IEEE-2019-AR_HMD_Guidence_for_Controlled_Hand_Held_3d_Acquisition.pdf"});
+            publications.push({"key":"andersen2019ar", "type":"article", "bibtex":"@article{andersen2019ar,\n  title = {AR HMD Guidance for Controlled Hand-Held 3D Acquisition},\n  author = {Andersen, Daniel and Villano, Peter and Popescu, Voicu},\n  journal = {IEEE transactions on visualization and computer graphics},\n  volume = {25},\n  number = {11},\n  pages = {3073--3082},\n  year = {2019},\n  publisher = {IEEE},\n  doi = {10.1109/TVCG.2019.2932172},\n  image = {andersen2019ar.jpg},\n  pdf = {Anderson-IEEE-2019-AR_HMD_Guidence_for_Controlled_Hand_Held_3d_Acquisition.pdf}\n}\n", "title":"AR HMD Guidance for Controlled Hand-Held 3D Acquisition", "author":"Andersen, Daniel and Villano, Peter and Popescu, Voicu", "author_array":[{"first":"Daniel", "last":"Andersen", "prefix":"", "suffix":""}, {"first":"Peter", "last":"Villano", "prefix":"", "suffix":""}, {"first":"Voicu", "last":"Popescu", "prefix":"", "suffix":""}], "author_0_first":"Daniel", "author_0_last":"Andersen", "author_0_prefix":"", "author_0_suffix":"", "author_1_first":"Peter", "author_1_last":"Villano", "author_1_prefix":"", "author_1_suffix":"", "author_2_first":"Voicu", "author_2_last":"Popescu", "author_2_prefix":"", "author_2_suffix":"", "journal":"IEEE transactions on visualization and computer graphics", "volume":"25", "number":"11", "pages":"3073–3082", "year":"2019", "publisher":"IEEE", "doi":"10.1109/TVCG.2019.2932172", "image":"andersen2019ar.jpg", "pdf":"Anderson-IEEE-2019-AR_HMD_Guidence_for_Controlled_Hand_Held_3d_Acquisition.pdf"});
     </script>
 </div></li>
 <li><div id="rojas2019surgical" class="row my-2">
     
 
     
-    <div class="col card border-dark">
-        <div class="row no-gutters align-items-center">
-            <div class="col-md-1" href="/publications/rojas2019surgical">
-                <div class="m-1 p-1 bg-dark rounded">
-                    <div class="embed-responsive embed-responsive-1by1">
-                        <img src="/resources/images/supplemental/default.png"
-                            class="embed-responsive-item rounded" style="object-fit: cover;"
-                            loading="lazy" >
-                    </div>
-                </div>
+    
+    <div class="card m-1">
+        <div class="row no-gutters">
+            <div class="col-xs p-3" href="/publications/rojas2019surgical">
+                <img src="/resources/images/supplemental/rojas2019surgical.jpg"
+                    class="card-img border border-dark lab-img-square" >
             </div>
-            <div class="col-md-11">
-                <div class="card-body">
-                    <a id="rojas2019surgical-title" class="h5 card-title"
-                        href="/publications/rojas2019surgical">Surgical telementoring without encumbrance: a comparative study of see-through augmented reality-based approaches (Rojas-Muñoz
+            <div class="col">
+                <div class="card-body p-3">
+                    <a id="rojas2019surgical-title" class="h5 card-title" href="/publications/rojas2019surgical"
+                        target="_blank">Surgical telementoring without encumbrance: a comparative study of see-through augmented reality-based approaches (Rojas-Muñoz
                         et al. 2019)</a>
                     <p class="card-text">
                         <p id="rojas2019surgical-reference"><em><span id="rojas2019surgical">Rojas-Muñoz, E., Cabrera, M. E., Andersen, D., Popescu, V., Marley, S., Mullis, B., Zarzaur, B., &amp; Wachs, J. (2019). Surgical telementoring without encumbrance: a comparative study of see-through augmented reality-based approaches. <i>Annals of Surgery</i>, <i>270</i>(2), 384–389. https://doi.org/10.1097/SLA.0000000000002764</span></em></p>
-                        <p><strong><a href=""></a></strong></p>
-
-                        
+                        <p><strong><a href="" target="_blank"></a></strong>
+                        </p>
 
                         <button class="btn btn-dark" onclick="$('#bibtex-rojas2019surgical').toggle()">BibTeX</button>
 
                         
-                        <a href="http://doi.org/10.1097/SLA.0000000000002764">
+                        <a href="http://doi.org/10.1097/SLA.0000000000002764" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="DOI" />
                         </a>
                         
@@ -613,6 +543,8 @@
                         <a href="/resources/papers/Rojas-Annals_of_Surgery-2019-Surgical_telementoring_without_encumbrance.pdf" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="PDF" />
                         </a>
+                        
+
                         
 
                         
@@ -632,6 +564,7 @@
   pages = {384--389},
   year = {2019},
   publisher = {LWW},
+  image = {rojas2019surgical.jpg},
   doi = {10.1097/SLA.0000000000002764},
   pdf = {Rojas-Annals_of_Surgery-2019-Surgical_telementoring_without_encumbrance.pdf}
 }
@@ -643,7 +576,7 @@
     </div>
     <script>
         if (publications)
-            publications.push({"key":"rojas2019surgical", "type":"article", "bibtex":"@article{rojas2019surgical,\n  title = {Surgical telementoring without encumbrance: a comparative study of see-through augmented reality-based approaches},\n  author = {Rojas-Mu{\\~n}oz, Edgar and Cabrera, Maria Eugenia and Andersen, Daniel and Popescu, Voicu and Marley, Sherri and Mullis, Brian and Zarzaur, Ben and Wachs, Juan},\n  journal = {Annals of surgery},\n  volume = {270},\n  number = {2},\n  pages = {384--389},\n  year = {2019},\n  publisher = {LWW},\n  doi = {10.1097/SLA.0000000000002764},\n  pdf = {Rojas-Annals_of_Surgery-2019-Surgical_telementoring_without_encumbrance.pdf}\n}\n", "title":"Surgical telementoring without encumbrance: a comparative study of see-through augmented reality-based approaches", "author":"Rojas-Muñoz, Edgar and Cabrera, Maria Eugenia and Andersen, Daniel and Popescu, Voicu and Marley, Sherri and Mullis, Brian and Zarzaur, Ben and Wachs, Juan", "author_array":[{"first":"Edgar", "last":"Rojas-Muñoz", "prefix":"", "suffix":""}, {"first":"Maria Eugenia", "last":"Cabrera", "prefix":"", "suffix":""}, {"first":"Daniel", "last":"Andersen", "prefix":"", "suffix":""}, {"first":"Voicu", "last":"Popescu", "prefix":"", "suffix":""}, {"first":"Sherri", "last":"Marley", "prefix":"", "suffix":""}, {"first":"Brian", "last":"Mullis", "prefix":"", "suffix":""}, {"first":"Ben", "last":"Zarzaur", "prefix":"", "suffix":""}, {"first":"Juan", "last":"Wachs", "prefix":"", "suffix":""}], "author_0_first":"Edgar", "author_0_last":"Rojas-Muñoz", "author_0_prefix":"", "author_0_suffix":"", "author_1_first":"Maria Eugenia", "author_1_last":"Cabrera", "author_1_prefix":"", "author_1_suffix":"", "author_2_first":"Daniel", "author_2_last":"Andersen", "author_2_prefix":"", "author_2_suffix":"", "author_3_first":"Voicu", "author_3_last":"Popescu", "author_3_prefix":"", "author_3_suffix":"", "author_4_first":"Sherri", "author_4_last":"Marley", "author_4_prefix":"", "author_4_suffix":"", "author_5_first":"Brian", "author_5_last":"Mullis", "author_5_prefix":"", "author_5_suffix":"", "author_6_first":"Ben", "author_6_last":"Zarzaur", "author_6_prefix":"", "author_6_suffix":"", "author_7_first":"Juan", "author_7_last":"Wachs", "author_7_prefix":"", "author_7_suffix":"", "journal":"Annals of surgery", "volume":"270", "number":"2", "pages":"384–389", "year":"2019", "publisher":"LWW", "doi":"10.1097/SLA.0000000000002764", "pdf":"Rojas-Annals_of_Surgery-2019-Surgical_telementoring_without_encumbrance.pdf"});
+            publications.push({"key":"rojas2019surgical", "type":"article", "bibtex":"@article{rojas2019surgical,\n  title = {Surgical telementoring without encumbrance: a comparative study of see-through augmented reality-based approaches},\n  author = {Rojas-Mu{\\~n}oz, Edgar and Cabrera, Maria Eugenia and Andersen, Daniel and Popescu, Voicu and Marley, Sherri and Mullis, Brian and Zarzaur, Ben and Wachs, Juan},\n  journal = {Annals of surgery},\n  volume = {270},\n  number = {2},\n  pages = {384--389},\n  year = {2019},\n  publisher = {LWW},\n  image = {rojas2019surgical.jpg},\n  doi = {10.1097/SLA.0000000000002764},\n  pdf = {Rojas-Annals_of_Surgery-2019-Surgical_telementoring_without_encumbrance.pdf}\n}\n", "title":"Surgical telementoring without encumbrance: a comparative study of see-through augmented reality-based approaches", "author":"Rojas-Muñoz, Edgar and Cabrera, Maria Eugenia and Andersen, Daniel and Popescu, Voicu and Marley, Sherri and Mullis, Brian and Zarzaur, Ben and Wachs, Juan", "author_array":[{"first":"Edgar", "last":"Rojas-Muñoz", "prefix":"", "suffix":""}, {"first":"Maria Eugenia", "last":"Cabrera", "prefix":"", "suffix":""}, {"first":"Daniel", "last":"Andersen", "prefix":"", "suffix":""}, {"first":"Voicu", "last":"Popescu", "prefix":"", "suffix":""}, {"first":"Sherri", "last":"Marley", "prefix":"", "suffix":""}, {"first":"Brian", "last":"Mullis", "prefix":"", "suffix":""}, {"first":"Ben", "last":"Zarzaur", "prefix":"", "suffix":""}, {"first":"Juan", "last":"Wachs", "prefix":"", "suffix":""}], "author_0_first":"Edgar", "author_0_last":"Rojas-Muñoz", "author_0_prefix":"", "author_0_suffix":"", "author_1_first":"Maria Eugenia", "author_1_last":"Cabrera", "author_1_prefix":"", "author_1_suffix":"", "author_2_first":"Daniel", "author_2_last":"Andersen", "author_2_prefix":"", "author_2_suffix":"", "author_3_first":"Voicu", "author_3_last":"Popescu", "author_3_prefix":"", "author_3_suffix":"", "author_4_first":"Sherri", "author_4_last":"Marley", "author_4_prefix":"", "author_4_suffix":"", "author_5_first":"Brian", "author_5_last":"Mullis", "author_5_prefix":"", "author_5_suffix":"", "author_6_first":"Ben", "author_6_last":"Zarzaur", "author_6_prefix":"", "author_6_suffix":"", "author_7_first":"Juan", "author_7_last":"Wachs", "author_7_prefix":"", "author_7_suffix":"", "journal":"Annals of surgery", "volume":"270", "number":"2", "pages":"384–389", "year":"2019", "publisher":"LWW", "image":"rojas2019surgical.jpg", "doi":"10.1097/SLA.0000000000002764", "pdf":"Rojas-Annals_of_Surgery-2019-Surgical_telementoring_without_encumbrance.pdf"});
     </script>
 </div></li></ul>
         </div>
@@ -659,36 +592,97 @@
         
         <h3>2018</h3>
         <div class="container-fluid">
-            <ul class="bibliography"><li><div id="andersen2018hmd" class="row my-2">
+            <ul class="bibliography"><li><div id="andersen2018ar" class="row my-2">
     
 
     
-    <div class="col card border-dark">
-        <div class="row no-gutters align-items-center">
-            <div class="col-md-1" href="/publications/andersen2018hmd">
-                <div class="m-1 p-1 bg-dark rounded">
-                    <div class="embed-responsive embed-responsive-1by1">
-                        <img src="/resources/images/supplemental/default.png"
-                            class="embed-responsive-item rounded" style="object-fit: cover;"
-                            loading="lazy" >
+    
+    <div class="card m-1">
+        <div class="row no-gutters">
+            <div class="col-xs p-3" href="/publications/andersen2018ar">
+                <img src="/resources/images/supplemental/default.png"
+                    class="card-img border border-dark lab-img-square" >
+            </div>
+            <div class="col">
+                <div class="card-body p-3">
+                    <a id="andersen2018ar-title" class="h5 card-title" href="/publications/andersen2018ar"
+                        target="_blank">An AR-guided system for fast image-based modeling of indoor scenes (Andersen
+                        et al. 2018)</a>
+                    <p class="card-text">
+                        <p id="andersen2018ar-reference"><em><span id="andersen2018ar">Andersen, D., &amp; Popescu, V. (2018). An AR-guided system for fast image-based modeling of indoor scenes. <i>2018 IEEE Conference on Virtual Reality and 3D User Interfaces (VR)</i>, 501–502. https://doi.org/10.1109/VR.2018.8446560</span></em></p>
+                        <p><strong><a href="" target="_blank"></a></strong>
+                        </p>
+
+                        <button class="btn btn-dark" onclick="$('#bibtex-andersen2018ar').toggle()">BibTeX</button>
+
+                        
+                        <a href="http://doi.org/10.1109/VR.2018.8446560" target="_blank">
+                            <input class="btn btn-outline-dark" type="button" value="DOI" />
+                        </a>
+                        
+
+                        
+                        <a href="/resources/papers/Andersen-IEEEVR-2018-Augmented_Modeling_Indoor_Scenes.pdf" target="_blank">
+                            <input class="btn btn-outline-dark" type="button" value="PDF" />
+                        </a>
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+                    </p>
+
+                    <div id="bibtex-andersen2018ar" style="display: none;">
+                        <pre>@inproceedings{andersen2018ar,
+  title = {An AR-guided system for fast image-based modeling of indoor scenes},
+  author = {Andersen, Daniel and Popescu, Voicu},
+  booktitle = {2018 IEEE Conference on Virtual Reality and 3D User Interfaces (VR)},
+  pages = {501--502},
+  year = {2018},
+  organization = {IEEE},
+  doi = {10.1109/VR.2018.8446560},
+  pdf = {Andersen-IEEEVR-2018-Augmented_Modeling_Indoor_Scenes.pdf}
+}
+</pre>
                     </div>
                 </div>
             </div>
-            <div class="col-md-11">
-                <div class="card-body">
-                    <a id="andersen2018hmd-title" class="h5 card-title"
-                        href="/publications/andersen2018hmd">HMD-guided image-based modeling and rendering of indoor scenes (Andersen
+        </div>
+    </div>
+    <script>
+        if (publications)
+            publications.push({"key":"andersen2018ar", "type":"inproceedings", "bibtex":"@inproceedings{andersen2018ar,\n  title = {An AR-guided system for fast image-based modeling of indoor scenes},\n  author = {Andersen, Daniel and Popescu, Voicu},\n  booktitle = {2018 IEEE Conference on Virtual Reality and 3D User Interfaces (VR)},\n  pages = {501--502},\n  year = {2018},\n  organization = {IEEE},\n  doi = {10.1109/VR.2018.8446560},\n  pdf = {Andersen-IEEEVR-2018-Augmented_Modeling_Indoor_Scenes.pdf}\n}\n", "title":"An AR-guided system for fast image-based modeling of indoor scenes", "author":"Andersen, Daniel and Popescu, Voicu", "author_array":[{"first":"Daniel", "last":"Andersen", "prefix":"", "suffix":""}, {"first":"Voicu", "last":"Popescu", "prefix":"", "suffix":""}], "author_0_first":"Daniel", "author_0_last":"Andersen", "author_0_prefix":"", "author_0_suffix":"", "author_1_first":"Voicu", "author_1_last":"Popescu", "author_1_prefix":"", "author_1_suffix":"", "booktitle":"2018 IEEE Conference on Virtual Reality and 3D User Interfaces (VR)", "pages":"501–502", "year":"2018", "organization":"IEEE", "doi":"10.1109/VR.2018.8446560", "pdf":"Andersen-IEEEVR-2018-Augmented_Modeling_Indoor_Scenes.pdf"});
+    </script>
+</div></li>
+<li><div id="andersen2018hmd" class="row my-2">
+    
+
+    
+    
+    <div class="card m-1">
+        <div class="row no-gutters">
+            <div class="col-xs p-3" href="/publications/andersen2018hmd">
+                <img src="/resources/images/supplemental/andersen2018hmd.jpg"
+                    class="card-img border border-dark lab-img-square" >
+            </div>
+            <div class="col">
+                <div class="card-body p-3">
+                    <a id="andersen2018hmd-title" class="h5 card-title" href="/publications/andersen2018hmd"
+                        target="_blank">HMD-guided image-based modeling and rendering of indoor scenes (Andersen
                         et al. 2018)</a>
                     <p class="card-text">
                         <p id="andersen2018hmd-reference"><em><span id="andersen2018hmd">Andersen, D., &amp; Popescu, V. (2018). HMD-guided image-based modeling and rendering of indoor scenes. <i>International Conference on Virtual Reality and Augmented Reality</i>, 73–93. https://doi.org/10.1007/978-3-030-01790-3_5</span></em></p>
-                        <p><strong><a href=""></a></strong></p>
-
-                        
+                        <p><strong><a href="" target="_blank"></a></strong>
+                        </p>
 
                         <button class="btn btn-dark" onclick="$('#bibtex-andersen2018hmd').toggle()">BibTeX</button>
 
                         
-                        <a href="http://doi.org/10.1007/978-3-030-01790-3_5">
+                        <a href="http://doi.org/10.1007/978-3-030-01790-3_5" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="DOI" />
                         </a>
                         
@@ -711,6 +705,8 @@
                         
 
                         
+
+                        
                     </p>
 
                     <div id="bibtex-andersen2018hmd" style="display: none;">
@@ -722,6 +718,7 @@
   year = {2018},
   organization = {Springer},
   doi = {10.1007/978-3-030-01790-3_5},
+  image = {andersen2018hmd.jpg},
   pdf = {Anderson-International_Conference_on_VR_and_AR-2018-HMD_guided_image_based_modeling_and_rendering_of_Indoor_scene.pdf},
   video = {https://www.youtube.com/watch?v=VTpUVWBnt0A}
 }
@@ -733,39 +730,34 @@
     </div>
     <script>
         if (publications)
-            publications.push({"key":"andersen2018hmd", "type":"inproceedings", "bibtex":"@inproceedings{andersen2018hmd,\n  title = {HMD-guided image-based modeling and rendering of indoor scenes},\n  author = {Andersen, Daniel and Popescu, Voicu},\n  booktitle = {International Conference on Virtual Reality and Augmented Reality},\n  pages = {73--93},\n  year = {2018},\n  organization = {Springer},\n  doi = {10.1007/978-3-030-01790-3_5},\n  pdf = {Anderson-International_Conference_on_VR_and_AR-2018-HMD_guided_image_based_modeling_and_rendering_of_Indoor_scene.pdf},\n  video = {https://www.youtube.com/watch?v=VTpUVWBnt0A}\n}\n", "title":"HMD-guided image-based modeling and rendering of indoor scenes", "author":"Andersen, Daniel and Popescu, Voicu", "author_array":[{"first":"Daniel", "last":"Andersen", "prefix":"", "suffix":""}, {"first":"Voicu", "last":"Popescu", "prefix":"", "suffix":""}], "author_0_first":"Daniel", "author_0_last":"Andersen", "author_0_prefix":"", "author_0_suffix":"", "author_1_first":"Voicu", "author_1_last":"Popescu", "author_1_prefix":"", "author_1_suffix":"", "booktitle":"International Conference on Virtual Reality and Augmented Reality", "pages":"73–93", "year":"2018", "organization":"Springer", "doi":"10.1007/978-3-030-01790-3_5", "pdf":"Anderson-International_Conference_on_VR_and_AR-2018-HMD_guided_image_based_modeling_and_rendering_of_Indoor_scene.pdf", "video":"https://www.youtube.com/watch?v=VTpUVWBnt0A"});
+            publications.push({"key":"andersen2018hmd", "type":"inproceedings", "bibtex":"@inproceedings{andersen2018hmd,\n  title = {HMD-guided image-based modeling and rendering of indoor scenes},\n  author = {Andersen, Daniel and Popescu, Voicu},\n  booktitle = {International Conference on Virtual Reality and Augmented Reality},\n  pages = {73--93},\n  year = {2018},\n  organization = {Springer},\n  doi = {10.1007/978-3-030-01790-3_5},\n  image = {andersen2018hmd.jpg},\n  pdf = {Anderson-International_Conference_on_VR_and_AR-2018-HMD_guided_image_based_modeling_and_rendering_of_Indoor_scene.pdf},\n  video = {https://www.youtube.com/watch?v=VTpUVWBnt0A}\n}\n", "title":"HMD-guided image-based modeling and rendering of indoor scenes", "author":"Andersen, Daniel and Popescu, Voicu", "author_array":[{"first":"Daniel", "last":"Andersen", "prefix":"", "suffix":""}, {"first":"Voicu", "last":"Popescu", "prefix":"", "suffix":""}], "author_0_first":"Daniel", "author_0_last":"Andersen", "author_0_prefix":"", "author_0_suffix":"", "author_1_first":"Voicu", "author_1_last":"Popescu", "author_1_prefix":"", "author_1_suffix":"", "booktitle":"International Conference on Virtual Reality and Augmented Reality", "pages":"73–93", "year":"2018", "organization":"Springer", "doi":"10.1007/978-3-030-01790-3_5", "image":"andersen2018hmd.jpg", "pdf":"Anderson-International_Conference_on_VR_and_AR-2018-HMD_guided_image_based_modeling_and_rendering_of_Indoor_scene.pdf", "video":"https://www.youtube.com/watch?v=VTpUVWBnt0A"});
     </script>
 </div></li>
 <li><div id="lin2018first" class="row my-2">
     
 
     
-    <div class="col card border-dark">
-        <div class="row no-gutters align-items-center">
-            <div class="col-md-1" href="/publications/lin2018first">
-                <div class="m-1 p-1 bg-dark rounded">
-                    <div class="embed-responsive embed-responsive-1by1">
-                        <img src="/resources/images/supplemental/default.png"
-                            class="embed-responsive-item rounded" style="object-fit: cover;"
-                            loading="lazy" >
-                    </div>
-                </div>
+    
+    <div class="card m-1">
+        <div class="row no-gutters">
+            <div class="col-xs p-3" href="/publications/lin2018first">
+                <img src="/resources/images/supplemental/lin2018first.jpg"
+                    class="card-img border border-dark lab-img-square" >
             </div>
-            <div class="col-md-11">
-                <div class="card-body">
-                    <a id="lin2018first-title" class="h5 card-title"
-                        href="/publications/lin2018first">A first-person mentee second-person mentor AR interface for surgical telementoring (Lin
+            <div class="col">
+                <div class="card-body p-3">
+                    <a id="lin2018first-title" class="h5 card-title" href="/publications/lin2018first"
+                        target="_blank">A first-person mentee second-person mentor AR interface for surgical telementoring (Lin
                         et al. 2018)</a>
                     <p class="card-text">
                         <p id="lin2018first-reference"><em><span id="lin2018first">Lin, C., Andersen, D., Popescu, V., Rojas-Munoz, E., Cabrera, M. E., Mullis, B., Zarzaur, B., Anderson, K., Marley, S., &amp; Wachs, J. (2018). A first-person mentee second-person mentor AR interface for surgical telementoring. <i>2018 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct)</i>, 3–8. https://doi.org/10.1109/ISMAR-Adjunct.2018.00021</span></em></p>
-                        <p><strong><a href=""></a></strong></p>
-
-                        
+                        <p><strong><a href="" target="_blank"></a></strong>
+                        </p>
 
                         <button class="btn btn-dark" onclick="$('#bibtex-lin2018first').toggle()">BibTeX</button>
 
                         
-                        <a href="http://doi.org/10.1109/ISMAR-Adjunct.2018.00021">
+                        <a href="http://doi.org/10.1109/ISMAR-Adjunct.2018.00021" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="DOI" />
                         </a>
                         
@@ -774,6 +766,8 @@
                         <a href="/resources/papers/Lin-IEEE-2018-A_first_person_mentee_second_Person_mentor_AR_interface_for_Surgical_telementoring.pdf" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="PDF" />
                         </a>
+                        
+
                         
 
                         
@@ -792,6 +786,7 @@
   year = {2018},
   organization = {IEEE},
   doi = {10.1109/ISMAR-Adjunct.2018.00021},
+  image = {lin2018first.jpg},
   pdf = {Lin-IEEE-2018-A_first_person_mentee_second_Person_mentor_AR_interface_for_Surgical_telementoring.pdf}
 }
 </pre>
@@ -802,39 +797,34 @@
     </div>
     <script>
         if (publications)
-            publications.push({"key":"lin2018first", "type":"inproceedings", "bibtex":"@inproceedings{lin2018first,\n  title = {A first-person mentee second-person mentor AR interface for surgical telementoring},\n  author = {Lin, Chengyuan and Andersen, Daniel and Popescu, Voicu and Rojas-Munoz, Edgar and Cabrera, Maria Eugenia and Mullis, Brian and Zarzaur, Ben and Anderson, Kathryn and Marley, Sherri and Wachs, Juan},\n  booktitle = {2018 IEEE international symposium on mixed and augmented reality adjunct (ISMAR-Adjunct)},\n  pages = {3--8},\n  year = {2018},\n  organization = {IEEE},\n  doi = {10.1109/ISMAR-Adjunct.2018.00021},\n  pdf = {Lin-IEEE-2018-A_first_person_mentee_second_Person_mentor_AR_interface_for_Surgical_telementoring.pdf}\n}\n", "title":"A first-person mentee second-person mentor AR interface for surgical telementoring", "author":"Lin, Chengyuan and Andersen, Daniel and Popescu, Voicu and Rojas-Munoz, Edgar and Cabrera, Maria Eugenia and Mullis, Brian and Zarzaur, Ben and Anderson, Kathryn and Marley, Sherri and Wachs, Juan", "author_array":[{"first":"Chengyuan", "last":"Lin", "prefix":"", "suffix":""}, {"first":"Daniel", "last":"Andersen", "prefix":"", "suffix":""}, {"first":"Voicu", "last":"Popescu", "prefix":"", "suffix":""}, {"first":"Edgar", "last":"Rojas-Munoz", "prefix":"", "suffix":""}, {"first":"Maria Eugenia", "last":"Cabrera", "prefix":"", "suffix":""}, {"first":"Brian", "last":"Mullis", "prefix":"", "suffix":""}, {"first":"Ben", "last":"Zarzaur", "prefix":"", "suffix":""}, {"first":"Kathryn", "last":"Anderson", "prefix":"", "suffix":""}, {"first":"Sherri", "last":"Marley", "prefix":"", "suffix":""}, {"first":"Juan", "last":"Wachs", "prefix":"", "suffix":""}], "author_0_first":"Chengyuan", "author_0_last":"Lin", "author_0_prefix":"", "author_0_suffix":"", "author_1_first":"Daniel", "author_1_last":"Andersen", "author_1_prefix":"", "author_1_suffix":"", "author_2_first":"Voicu", "author_2_last":"Popescu", "author_2_prefix":"", "author_2_suffix":"", "author_3_first":"Edgar", "author_3_last":"Rojas-Munoz", "author_3_prefix":"", "author_3_suffix":"", "author_4_first":"Maria Eugenia", "author_4_last":"Cabrera", "author_4_prefix":"", "author_4_suffix":"", "author_5_first":"Brian", "author_5_last":"Mullis", "author_5_prefix":"", "author_5_suffix":"", "author_6_first":"Ben", "author_6_last":"Zarzaur", "author_6_prefix":"", "author_6_suffix":"", "author_7_first":"Kathryn", "author_7_last":"Anderson", "author_7_prefix":"", "author_7_suffix":"", "author_8_first":"Sherri", "author_8_last":"Marley", "author_8_prefix":"", "author_8_suffix":"", "author_9_first":"Juan", "author_9_last":"Wachs", "author_9_prefix":"", "author_9_suffix":"", "booktitle":"2018 IEEE international symposium on mixed and augmented reality adjunct (ISMAR-Adjunct)", "pages":"3–8", "year":"2018", "organization":"IEEE", "doi":"10.1109/ISMAR-Adjunct.2018.00021", "pdf":"Lin-IEEE-2018-A_first_person_mentee_second_Person_mentor_AR_interface_for_Surgical_telementoring.pdf"});
+            publications.push({"key":"lin2018first", "type":"inproceedings", "bibtex":"@inproceedings{lin2018first,\n  title = {A first-person mentee second-person mentor AR interface for surgical telementoring},\n  author = {Lin, Chengyuan and Andersen, Daniel and Popescu, Voicu and Rojas-Munoz, Edgar and Cabrera, Maria Eugenia and Mullis, Brian and Zarzaur, Ben and Anderson, Kathryn and Marley, Sherri and Wachs, Juan},\n  booktitle = {2018 IEEE international symposium on mixed and augmented reality adjunct (ISMAR-Adjunct)},\n  pages = {3--8},\n  year = {2018},\n  organization = {IEEE},\n  doi = {10.1109/ISMAR-Adjunct.2018.00021},\n  image = {lin2018first.jpg},\n  pdf = {Lin-IEEE-2018-A_first_person_mentee_second_Person_mentor_AR_interface_for_Surgical_telementoring.pdf}\n}\n", "title":"A first-person mentee second-person mentor AR interface for surgical telementoring", "author":"Lin, Chengyuan and Andersen, Daniel and Popescu, Voicu and Rojas-Munoz, Edgar and Cabrera, Maria Eugenia and Mullis, Brian and Zarzaur, Ben and Anderson, Kathryn and Marley, Sherri and Wachs, Juan", "author_array":[{"first":"Chengyuan", "last":"Lin", "prefix":"", "suffix":""}, {"first":"Daniel", "last":"Andersen", "prefix":"", "suffix":""}, {"first":"Voicu", "last":"Popescu", "prefix":"", "suffix":""}, {"first":"Edgar", "last":"Rojas-Munoz", "prefix":"", "suffix":""}, {"first":"Maria Eugenia", "last":"Cabrera", "prefix":"", "suffix":""}, {"first":"Brian", "last":"Mullis", "prefix":"", "suffix":""}, {"first":"Ben", "last":"Zarzaur", "prefix":"", "suffix":""}, {"first":"Kathryn", "last":"Anderson", "prefix":"", "suffix":""}, {"first":"Sherri", "last":"Marley", "prefix":"", "suffix":""}, {"first":"Juan", "last":"Wachs", "prefix":"", "suffix":""}], "author_0_first":"Chengyuan", "author_0_last":"Lin", "author_0_prefix":"", "author_0_suffix":"", "author_1_first":"Daniel", "author_1_last":"Andersen", "author_1_prefix":"", "author_1_suffix":"", "author_2_first":"Voicu", "author_2_last":"Popescu", "author_2_prefix":"", "author_2_suffix":"", "author_3_first":"Edgar", "author_3_last":"Rojas-Munoz", "author_3_prefix":"", "author_3_suffix":"", "author_4_first":"Maria Eugenia", "author_4_last":"Cabrera", "author_4_prefix":"", "author_4_suffix":"", "author_5_first":"Brian", "author_5_last":"Mullis", "author_5_prefix":"", "author_5_suffix":"", "author_6_first":"Ben", "author_6_last":"Zarzaur", "author_6_prefix":"", "author_6_suffix":"", "author_7_first":"Kathryn", "author_7_last":"Anderson", "author_7_prefix":"", "author_7_suffix":"", "author_8_first":"Sherri", "author_8_last":"Marley", "author_8_prefix":"", "author_8_suffix":"", "author_9_first":"Juan", "author_9_last":"Wachs", "author_9_prefix":"", "author_9_suffix":"", "booktitle":"2018 IEEE international symposium on mixed and augmented reality adjunct (ISMAR-Adjunct)", "pages":"3–8", "year":"2018", "organization":"IEEE", "doi":"10.1109/ISMAR-Adjunct.2018.00021", "image":"lin2018first.jpg", "pdf":"Lin-IEEE-2018-A_first_person_mentee_second_Person_mentor_AR_interface_for_Surgical_telementoring.pdf"});
     </script>
 </div></li>
 <li><div id="andersen2018augmented" class="row my-2">
     
 
     
-    <div class="col card border-dark">
-        <div class="row no-gutters align-items-center">
-            <div class="col-md-1" href="/publications/andersen2018augmented">
-                <div class="m-1 p-1 bg-dark rounded">
-                    <div class="embed-responsive embed-responsive-1by1">
-                        <img src="/resources/images/supplemental/default.png"
-                            class="embed-responsive-item rounded" style="object-fit: cover;"
-                            loading="lazy" >
-                    </div>
-                </div>
+    
+    <div class="card m-1">
+        <div class="row no-gutters">
+            <div class="col-xs p-3" href="/publications/andersen2018augmented">
+                <img src="/resources/images/supplemental/andersen2018augmented.jpg"
+                    class="card-img border border-dark lab-img-square" >
             </div>
-            <div class="col-md-11">
-                <div class="card-body">
-                    <a id="andersen2018augmented-title" class="h5 card-title"
-                        href="/publications/andersen2018augmented">Augmented visual instruction for surgical practice and training (Andersen
+            <div class="col">
+                <div class="card-body p-3">
+                    <a id="andersen2018augmented-title" class="h5 card-title" href="/publications/andersen2018augmented"
+                        target="_blank">Augmented visual instruction for surgical practice and training (Andersen
                         et al. 2018)</a>
                     <p class="card-text">
                         <p id="andersen2018augmented-reference"><em><span id="andersen2018augmented">Andersen, D., Lin, C., Popescu, V., Munoz, E. R., Cabrera, M. E., Mullis, B., Zarzaur, B., Marley, S., &amp; Wachs, J. (2018). Augmented visual instruction for surgical practice and training. <i>2018 IEEE Workshop on Augmented and Virtual Realities for Good (VAR4Good)</i>, 1–5. https://doi.org/10.1109/VAR4GOOD.2018.8576884</span></em></p>
-                        <p><strong><a href=""></a></strong></p>
-
-                        
+                        <p><strong><a href="" target="_blank"></a></strong>
+                        </p>
 
                         <button class="btn btn-dark" onclick="$('#bibtex-andersen2018augmented').toggle()">BibTeX</button>
 
                         
-                        <a href="http://doi.org/10.1109/VAR4GOOD.2018.8576884">
+                        <a href="http://doi.org/10.1109/VAR4GOOD.2018.8576884" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="DOI" />
                         </a>
                         
@@ -843,6 +833,8 @@
                         <a href="/resources/papers/Anderson-IEEE-2018-Augmented_visual_instruction_for_surgical_practice_and_training.pdf" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="PDF" />
                         </a>
+                        
+
                         
 
                         
@@ -861,6 +853,7 @@
   year = {2018},
   organization = {IEEE},
   doi = {10.1109/VAR4GOOD.2018.8576884},
+  image = {andersen2018augmented.jpg},
   pdf = {Anderson-IEEE-2018-Augmented_visual_instruction_for_surgical_practice_and_training.pdf}
 }
 </pre>
@@ -871,7 +864,7 @@
     </div>
     <script>
         if (publications)
-            publications.push({"key":"andersen2018augmented", "type":"inproceedings", "bibtex":"@inproceedings{andersen2018augmented,\n  title = {Augmented visual instruction for surgical practice and training},\n  author = {Andersen, Daniel and Lin, Chengyuan and Popescu, Voicu and Munoz, Edgar Rojas and Cabrera, Maria Eugenia and Mullis, Brian and Zarzaur, Ben and Marley, Sherri and Wachs, Juan},\n  booktitle = {2018 IEEE Workshop on Augmented and Virtual Realities for Good (VAR4Good)},\n  pages = {1--5},\n  year = {2018},\n  organization = {IEEE},\n  doi = {10.1109/VAR4GOOD.2018.8576884},\n  pdf = {Anderson-IEEE-2018-Augmented_visual_instruction_for_surgical_practice_and_training.pdf}\n}\n", "title":"Augmented visual instruction for surgical practice and training", "author":"Andersen, Daniel and Lin, Chengyuan and Popescu, Voicu and Munoz, Edgar Rojas and Cabrera, Maria Eugenia and Mullis, Brian and Zarzaur, Ben and Marley, Sherri and Wachs, Juan", "author_array":[{"first":"Daniel", "last":"Andersen", "prefix":"", "suffix":""}, {"first":"Chengyuan", "last":"Lin", "prefix":"", "suffix":""}, {"first":"Voicu", "last":"Popescu", "prefix":"", "suffix":""}, {"first":"Edgar Rojas", "last":"Munoz", "prefix":"", "suffix":""}, {"first":"Maria Eugenia", "last":"Cabrera", "prefix":"", "suffix":""}, {"first":"Brian", "last":"Mullis", "prefix":"", "suffix":""}, {"first":"Ben", "last":"Zarzaur", "prefix":"", "suffix":""}, {"first":"Sherri", "last":"Marley", "prefix":"", "suffix":""}, {"first":"Juan", "last":"Wachs", "prefix":"", "suffix":""}], "author_0_first":"Daniel", "author_0_last":"Andersen", "author_0_prefix":"", "author_0_suffix":"", "author_1_first":"Chengyuan", "author_1_last":"Lin", "author_1_prefix":"", "author_1_suffix":"", "author_2_first":"Voicu", "author_2_last":"Popescu", "author_2_prefix":"", "author_2_suffix":"", "author_3_first":"Edgar Rojas", "author_3_last":"Munoz", "author_3_prefix":"", "author_3_suffix":"", "author_4_first":"Maria Eugenia", "author_4_last":"Cabrera", "author_4_prefix":"", "author_4_suffix":"", "author_5_first":"Brian", "author_5_last":"Mullis", "author_5_prefix":"", "author_5_suffix":"", "author_6_first":"Ben", "author_6_last":"Zarzaur", "author_6_prefix":"", "author_6_suffix":"", "author_7_first":"Sherri", "author_7_last":"Marley", "author_7_prefix":"", "author_7_suffix":"", "author_8_first":"Juan", "author_8_last":"Wachs", "author_8_prefix":"", "author_8_suffix":"", "booktitle":"2018 IEEE Workshop on Augmented and Virtual Realities for Good (VAR4Good)", "pages":"1–5", "year":"2018", "organization":"IEEE", "doi":"10.1109/VAR4GOOD.2018.8576884", "pdf":"Anderson-IEEE-2018-Augmented_visual_instruction_for_surgical_practice_and_training.pdf"});
+            publications.push({"key":"andersen2018augmented", "type":"inproceedings", "bibtex":"@inproceedings{andersen2018augmented,\n  title = {Augmented visual instruction for surgical practice and training},\n  author = {Andersen, Daniel and Lin, Chengyuan and Popescu, Voicu and Munoz, Edgar Rojas and Cabrera, Maria Eugenia and Mullis, Brian and Zarzaur, Ben and Marley, Sherri and Wachs, Juan},\n  booktitle = {2018 IEEE Workshop on Augmented and Virtual Realities for Good (VAR4Good)},\n  pages = {1--5},\n  year = {2018},\n  organization = {IEEE},\n  doi = {10.1109/VAR4GOOD.2018.8576884},\n  image = {andersen2018augmented.jpg},\n  pdf = {Anderson-IEEE-2018-Augmented_visual_instruction_for_surgical_practice_and_training.pdf}\n}\n", "title":"Augmented visual instruction for surgical practice and training", "author":"Andersen, Daniel and Lin, Chengyuan and Popescu, Voicu and Munoz, Edgar Rojas and Cabrera, Maria Eugenia and Mullis, Brian and Zarzaur, Ben and Marley, Sherri and Wachs, Juan", "author_array":[{"first":"Daniel", "last":"Andersen", "prefix":"", "suffix":""}, {"first":"Chengyuan", "last":"Lin", "prefix":"", "suffix":""}, {"first":"Voicu", "last":"Popescu", "prefix":"", "suffix":""}, {"first":"Edgar Rojas", "last":"Munoz", "prefix":"", "suffix":""}, {"first":"Maria Eugenia", "last":"Cabrera", "prefix":"", "suffix":""}, {"first":"Brian", "last":"Mullis", "prefix":"", "suffix":""}, {"first":"Ben", "last":"Zarzaur", "prefix":"", "suffix":""}, {"first":"Sherri", "last":"Marley", "prefix":"", "suffix":""}, {"first":"Juan", "last":"Wachs", "prefix":"", "suffix":""}], "author_0_first":"Daniel", "author_0_last":"Andersen", "author_0_prefix":"", "author_0_suffix":"", "author_1_first":"Chengyuan", "author_1_last":"Lin", "author_1_prefix":"", "author_1_suffix":"", "author_2_first":"Voicu", "author_2_last":"Popescu", "author_2_prefix":"", "author_2_suffix":"", "author_3_first":"Edgar Rojas", "author_3_last":"Munoz", "author_3_prefix":"", "author_3_suffix":"", "author_4_first":"Maria Eugenia", "author_4_last":"Cabrera", "author_4_prefix":"", "author_4_suffix":"", "author_5_first":"Brian", "author_5_last":"Mullis", "author_5_prefix":"", "author_5_suffix":"", "author_6_first":"Ben", "author_6_last":"Zarzaur", "author_6_prefix":"", "author_6_suffix":"", "author_7_first":"Sherri", "author_7_last":"Marley", "author_7_prefix":"", "author_7_suffix":"", "author_8_first":"Juan", "author_8_last":"Wachs", "author_8_prefix":"", "author_8_suffix":"", "booktitle":"2018 IEEE Workshop on Augmented and Virtual Realities for Good (VAR4Good)", "pages":"1–5", "year":"2018", "organization":"IEEE", "doi":"10.1109/VAR4GOOD.2018.8576884", "image":"andersen2018augmented.jpg", "pdf":"Anderson-IEEE-2018-Augmented_visual_instruction_for_surgical_practice_and_training.pdf"});
     </script>
 </div></li></ul>
         </div>
@@ -897,32 +890,27 @@
     
 
     
-    <div class="col card border-dark">
-        <div class="row no-gutters align-items-center">
-            <div class="col-md-1" href="/publications/andersen2016medical">
-                <div class="m-1 p-1 bg-dark rounded">
-                    <div class="embed-responsive embed-responsive-1by1">
-                        <img src="/resources/images/supplemental/default.png"
-                            class="embed-responsive-item rounded" style="object-fit: cover;"
-                            loading="lazy" >
-                    </div>
-                </div>
+    
+    <div class="card m-1">
+        <div class="row no-gutters">
+            <div class="col-xs p-3" href="/publications/andersen2016medical">
+                <img src="/resources/images/supplemental/default.png"
+                    class="card-img border border-dark lab-img-square" >
             </div>
-            <div class="col-md-11">
-                <div class="card-body">
-                    <a id="andersen2016medical-title" class="h5 card-title"
-                        href="/publications/andersen2016medical">Medical telementoring using an augmented reality transparent display (Andersen
+            <div class="col">
+                <div class="card-body p-3">
+                    <a id="andersen2016medical-title" class="h5 card-title" href="/publications/andersen2016medical"
+                        target="_blank">Medical telementoring using an augmented reality transparent display (Andersen
                         et al. 2016)</a>
                     <p class="card-text">
                         <p id="andersen2016medical-reference"><em><span id="andersen2016medical">Andersen, D., Popescu, V., Cabrera, M. E., Shanghavi, A., Gomez, G., Marley, S., Mullis, B., &amp; Wachs, J. P. (2016). Medical telementoring using an augmented reality transparent display. <i>Surgery</i>, <i>159</i>(6), 1646–1653. https://doi.org/10.1016/j.surg.2015.12.016</span></em></p>
-                        <p><strong><a href=""></a></strong></p>
-
-                        
+                        <p><strong><a href="" target="_blank"></a></strong>
+                        </p>
 
                         <button class="btn btn-dark" onclick="$('#bibtex-andersen2016medical').toggle()">BibTeX</button>
 
                         
-                        <a href="http://doi.org/10.1016/j.surg.2015.12.016">
+                        <a href="http://doi.org/10.1016/j.surg.2015.12.016" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="DOI" />
                         </a>
                         
@@ -931,6 +919,8 @@
                         <a href="/resources/papers/Anderson-Surgery-2016-Medical_Telementoring_Using_an_AR_Transparent_Display.pdf" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="PDF" />
                         </a>
+                        
+
                         
 
                         
@@ -968,32 +958,27 @@
     
 
     
-    <div class="col card border-dark">
-        <div class="row no-gutters align-items-center">
-            <div class="col-md-1" href="/publications/andersen2016virtual">
-                <div class="m-1 p-1 bg-dark rounded">
-                    <div class="embed-responsive embed-responsive-1by1">
-                        <img src="/resources/images/supplemental/default.png"
-                            class="embed-responsive-item rounded" style="object-fit: cover;"
-                            loading="lazy" >
-                    </div>
-                </div>
+    
+    <div class="card m-1">
+        <div class="row no-gutters">
+            <div class="col-xs p-3" href="/publications/andersen2016virtual">
+                <img src="/resources/images/supplemental/default.png"
+                    class="card-img border border-dark lab-img-square" >
             </div>
-            <div class="col-md-11">
-                <div class="card-body">
-                    <a id="andersen2016virtual-title" class="h5 card-title"
-                        href="/publications/andersen2016virtual">Virtual annotations of the surgical field through an augmented reality transparent display (Andersen
+            <div class="col">
+                <div class="card-body p-3">
+                    <a id="andersen2016virtual-title" class="h5 card-title" href="/publications/andersen2016virtual"
+                        target="_blank">Virtual annotations of the surgical field through an augmented reality transparent display (Andersen
                         et al. 2016)</a>
                     <p class="card-text">
                         <p id="andersen2016virtual-reference"><em><span id="andersen2016virtual">Andersen, D., Popescu, V., Cabrera, M. E., Shanghavi, A., Gomez, G., Marley, S., Mullis, B., &amp; Wachs, J. (2016). Virtual annotations of the surgical field through an augmented reality transparent display. <i>The Visual Computer</i>, <i>32</i>(11), 1481–1498. https://doi.org/10.1007/s00371-015-1135-6</span></em></p>
-                        <p><strong><a href=""></a></strong></p>
-
-                        
+                        <p><strong><a href="" target="_blank"></a></strong>
+                        </p>
 
                         <button class="btn btn-dark" onclick="$('#bibtex-andersen2016virtual').toggle()">BibTeX</button>
 
                         
-                        <a href="http://doi.org/10.1007/s00371-015-1135-6">
+                        <a href="http://doi.org/10.1007/s00371-015-1135-6" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="DOI" />
                         </a>
                         
@@ -1002,6 +987,8 @@
                         <a href="/resources/papers/Anderson-The_Visual_Computer-2016-VR_Annotations_of_the_Surgical_Field_through_an_AR_Transparent_Display.pdf" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="PDF" />
                         </a>
+                        
+
                         
 
                         
@@ -1039,32 +1026,27 @@
     
 
     
-    <div class="col card border-dark">
-        <div class="row no-gutters align-items-center">
-            <div class="col-md-1" href="/publications/andersen2016hand">
-                <div class="m-1 p-1 bg-dark rounded">
-                    <div class="embed-responsive embed-responsive-1by1">
-                        <img src="/resources/images/supplemental/default.png"
-                            class="embed-responsive-item rounded" style="object-fit: cover;"
-                            loading="lazy" >
-                    </div>
-                </div>
+    
+    <div class="card m-1">
+        <div class="row no-gutters">
+            <div class="col-xs p-3" href="/publications/andersen2016hand">
+                <img src="/resources/images/supplemental/default.png"
+                    class="card-img border border-dark lab-img-square" >
             </div>
-            <div class="col-md-11">
-                <div class="card-body">
-                    <a id="andersen2016hand-title" class="h5 card-title"
-                        href="/publications/andersen2016hand">A hand-held, self-contained simulated transparent display (Andersen
+            <div class="col">
+                <div class="card-body p-3">
+                    <a id="andersen2016hand-title" class="h5 card-title" href="/publications/andersen2016hand"
+                        target="_blank">A hand-held, self-contained simulated transparent display (Andersen
                         et al. 2016)</a>
                     <p class="card-text">
                         <p id="andersen2016hand-reference"><em><span id="andersen2016hand">Andersen, D., Popescu, V., Lin, C., Cabrera, M. E., Shanghavi, A., &amp; Wachs, J. (2016). A hand-held, self-contained simulated transparent display. <i>2016 IEEE International Symposium on Mixed and Augmented Reality (ISMAR-Adjunct)</i>, 96–101. https://doi.org/10.1109/ISMAR-Adjunct.2016.0049</span></em></p>
-                        <p><strong><a href=""></a></strong></p>
-
-                        
+                        <p><strong><a href="" target="_blank"></a></strong>
+                        </p>
 
                         <button class="btn btn-dark" onclick="$('#bibtex-andersen2016hand').toggle()">BibTeX</button>
 
                         
-                        <a href="http://doi.org/10.1109/ISMAR-Adjunct.2016.0049">
+                        <a href="http://doi.org/10.1109/ISMAR-Adjunct.2016.0049" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="DOI" />
                         </a>
                         
@@ -1073,6 +1055,8 @@
                         <a href="/resources/papers/Anderson-IEEE-2016-AR-Self-Contained_Simulated_Transparent_Display.pdf" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="PDF" />
                         </a>
+                        
+
                         
 
                         
@@ -1108,32 +1092,27 @@
     
 
     
-    <div class="col card border-dark">
-        <div class="row no-gutters align-items-center">
-            <div class="col-md-1" href="/publications/andersen2016avoiding">
-                <div class="m-1 p-1 bg-dark rounded">
-                    <div class="embed-responsive embed-responsive-1by1">
-                        <img src="/resources/images/supplemental/default.png"
-                            class="embed-responsive-item rounded" style="object-fit: cover;"
-                            loading="lazy" >
-                    </div>
-                </div>
+    
+    <div class="card m-1">
+        <div class="row no-gutters">
+            <div class="col-xs p-3" href="/publications/andersen2016avoiding">
+                <img src="/resources/images/supplemental/default.png"
+                    class="card-img border border-dark lab-img-square" >
             </div>
-            <div class="col-md-11">
-                <div class="card-body">
-                    <a id="andersen2016avoiding-title" class="h5 card-title"
-                        href="/publications/andersen2016avoiding">Avoiding Focus Shifts in Surgical Telementoring Using an Augmented Reality Transparent Display. (Andersen
+            <div class="col">
+                <div class="card-body p-3">
+                    <a id="andersen2016avoiding-title" class="h5 card-title" href="/publications/andersen2016avoiding"
+                        target="_blank">Avoiding Focus Shifts in Surgical Telementoring Using an Augmented Reality Transparent Display. (Andersen
                         et al. 2016)</a>
                     <p class="card-text">
                         <p id="andersen2016avoiding-reference"><em><span id="andersen2016avoiding">Andersen, D., Popescu, V., Cabrera, M. E., Shanghavi, A., Gómez, G., Marley, S., Mullis, B., &amp; Wachs, J. P. (2016). Avoiding Focus Shifts in Surgical Telementoring Using an Augmented Reality Transparent Display. <i>MMVR</i>, <i>22</i>, 9–14. https://doi.org/10.3233/978-1-61499-625-5-9</span></em></p>
-                        <p><strong><a href=""></a></strong></p>
-
-                        
+                        <p><strong><a href="" target="_blank"></a></strong>
+                        </p>
 
                         <button class="btn btn-dark" onclick="$('#bibtex-andersen2016avoiding').toggle()">BibTeX</button>
 
                         
-                        <a href="http://doi.org/10.3233/978-1-61499-625-5-9">
+                        <a href="http://doi.org/10.3233/978-1-61499-625-5-9" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="DOI" />
                         </a>
                         
@@ -1142,6 +1121,8 @@
                         <a href="/resources/papers/Andersen-Medicine_Meets_Virtual_Reality-2016-Avoiding_Focus_Shifts_in_Surgical_Telementroing_Using_AR_Transparent_Display.pdf" target="_blank">
                             <input class="btn btn-outline-dark" type="button" value="PDF" />
                         </a>
+                        
+
                         
 
                         
@@ -1283,30 +1264,35 @@
     </div>
 </div>
   </div>
-  <div class="footer container-fluid px-3 py-3 mt-auto bg-dark">
-	<div class="row justify-content-center">
-		<div class="col-sm-4">
-			<strong class="text-light">CGVLab Website</strong>
-			<p class="text-light m-0">Copyright &copy; 21 CGVLab. Site made with <a
-					href="https://jekyllrb.com">Jekyll</a>.
-			</p>
-			<p class="text-light">(<a href="http://wiki.cs.purdue.edu/cgvlab/doku.php">Internal Lab Wiki</a>)</p>
-		</div>
-		<div class="col-sm-4">
-			<strong class="text-light">Funding</strong>
-			<p class="text-light m-0">
-				XXX funding info XXX
-			</p>
-			<p class="text-light">We are part of the <a href="https://www.cs.purdue.edu/">Department of Computer Science</a> at  <a href="https://www.purdue.edu/">Purdue University</a>.
-			</p>
-		</div>
-		<div class="col-sm-4">
-			<strong class="text-light">Address</strong>
-			<p class="text-light m-0">Lawson Computer Science Building (LWSN) Room 3151, Purdue University</p>
-			<p class="text-light m-0">305 N. University Street, West Lafayette,
-				IN 47907</p>
-			<p class="text-light m-0">(<a href="https://goo.gl/maps/kWo74ytXx42Mv5TD8" target="_blank">Map</a>)</p>
-			
+  <div class="container-fluid px-3 py-3 mt-auto bg-dark text-light border-top border-primary lab-border lab-link-light">
+	<div class="footer container">
+		<div class="row justify-content-center">
+			<div class="col-sm">
+				<h5>CGVLab Website</h5>
+				<p>Copyright &copy; 2021 CGVLab. Site made with
+					<a href="https://jekyllrb.com">Jekyll</a>.
+				</p>
+				(<a href="http://wiki.cs.purdue.edu/cgvlab/doku.php">Internal Lab Wiki</a>)
+			</div>
+			<div class="col-sm mt-3 mt-sm-0">
+				<h5>Funding</h5>
+				<p>
+					XXX funding info XXX
+				</p>
+				We are part of the <a href="https://www.cs.purdue.edu/">Department of Computer Science</a> at <a href="https://www.purdue.edu/">Purdue University</a>.
+			</div>
+			<div class="col-sm mt-3 mt-sm-0">
+				<h5>Address</h5>
+				<p>
+					Lawson Computer Science Building (LWSN) Room 3151, Purdue University
+					<br>
+					305 N. University Street, West Lafayette,
+					IN 47907
+					<br>
+					(<a href="https://goo.gl/maps/kWo74ytXx42Mv5TD8" target="_blank">Map</a>)
+				</p>
+				
+			</div>
 		</div>
 	</div>
 </div>

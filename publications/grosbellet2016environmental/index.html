@@ -23,8 +23,9 @@
 
   <link rel="stylesheet" href="/theme/css/main.css">
 
-  <script src="/dependencies/js/jquery/jquery-3.5.1.min.js"></script>
+  <script src="/dependencies/js/jquery/jquery-3.6.0.min.js"></script>
   <script src="/dependencies/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="/dependencies/js/jquery/pagination.min.js"></script>
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Environmental Objects for Authoring Procedural Scenes (Publication) | CGVLab</title>
@@ -36,73 +37,93 @@
 <link rel="canonical" href="https://cgvlab.purdue.edu/publications/grosbellet2016environmental/" />
 <meta property="og:url" content="https://cgvlab.purdue.edu/publications/grosbellet2016environmental/" />
 <meta property="og:site_name" content="CGVLab" />
-<meta property="og:image" content="https://cgvlab.purdue.edu/theme/images/icon.png" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://cgvlab.purdue.edu/theme/images/icon.png" />
+<meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Environmental Objects for Authoring Procedural Scenes (Publication)" />
 <script type="application/ld+json">
-{"@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cgvlab.purdue.edu/theme/images/icon.png"}},"url":"https://cgvlab.purdue.edu/publications/grosbellet2016environmental/","headline":"Environmental Objects for Authoring Procedural Scenes (Publication)","description":"[“Grosbellet, Francois, et al. “Environmental Objects for Authoring Procedural Scenes.” Computer Graphics Forum, vol. 35, no. 1, 2016, pp. 296–308, doi:10.1111/cgf.12726.”]","image":"https://cgvlab.purdue.edu/theme/images/icon.png","@context":"https://schema.org"}</script>
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cgvlab.purdue.edu/theme/images/icon.png"}},"description":"[“Grosbellet, Francois, et al. “Environmental Objects for Authoring Procedural Scenes.” Computer Graphics Forum, vol. 35, no. 1, 2016, pp. 296–308, doi:10.1111/cgf.12726.”]","@type":"WebPage","url":"https://cgvlab.purdue.edu/publications/grosbellet2016environmental/","headline":"Environmental Objects for Authoring Procedural Scenes (Publication)","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-</head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	<a class="navbar-brand m-0 p-2" href="/">
-		<img src="/theme/images/icon.png" width="64" class="d-inline-block" alt="Icon">
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-82472331-1', 'auto');
+	ga('send', 'pageview', { 'page': location.pathname + location.search + location.hash});
+	ga('set', 'anonymizeIp', false);
+    </script>
+    <!-- End Google Analytics -->
+    </head>
+
+<body class="bg-light text-dark">
+  <div class="container-fluid bg-dark border-bottom border-primary lab-border">
+	<nav class="navbar container navbar-expand-lg navbar-dark">
+		<a class="navbar-brand m-0 p-2" href="/">
+			<img src="/theme/images/icon.png" width="64" class="d-inline-block" alt="Icon">
+		</a>
 		<div class="d-inline-flex flex-column justify-content-center align-items-start ml-3">
 			<h1 class="text-primary m-0">CGVLab</h1>
-			<small class="text-muted mr-5 text-wrap">Computer Graphics and Visualization Laboratory at Purdue University</small>
+			<a class="lab-single-link-muted mr-5 text-wrap" href="https://cs.purdue.edu"
+				target="_blank">Department of Computer Science at Purdue University</a>
 		</div>
-	</a>
+	
+		<button class="navbar-toggler m-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	
+		<div id="navbarSupportedContent" class="collapse navbar-collapse">
+			<div class="mr-auto"></div>
+			<ul class="navbar-nav">
+				
+				<li class="nav-item mx-3">
+					
+					<a class="h5 nav-link lab-nav-link m-0 " href="/">Home</a>
+				</li>
+				
+				<li class="nav-item mx-3">
+					
+					<a class="h5 nav-link lab-nav-link m-0 " href="/news/">News</a>
+				</li>
+				
+				<li class="nav-item mx-3">
+					
+					<a class="h5 nav-link lab-nav-link m-0 " href="/research/">Research</a>
+				</li>
+				
+				<li class="nav-item mx-3">
+					
+					<a class="h5 nav-link lab-nav-link m-0 " href="/publications/">Publications</a>
+				</li>
+				
+				<li class="nav-item mx-3">
+					
+					<a class="h5 nav-link lab-nav-link m-0 " href="/team/">Team</a>
+				</li>
+				
+				<li class="nav-item mx-3">
+					
+					<a class="h5 nav-link lab-nav-link m-0 " href="/classes/">Classes</a>
+				</li>
+				
+			</ul>
+		</div>
+	</nav>
+</div>
 
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-		aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-
-	<div id="navbarSupportedContent" class="collapse navbar-collapse">
-		<div class="mr-auto"></div>
-		<ul class="navbar-nav">
-			
-			<li class="nav-item mx-4">
-				
-				<a class="h5 nav-link text-primary " href="/">Home</a>
-			</li>
-			
-			<li class="nav-item mx-4">
-				
-				<a class="h5 nav-link text-primary " href="/news/">News</a>
-			</li>
-			
-			<li class="nav-item mx-4">
-				
-				<a class="h5 nav-link text-primary " href="/research/">Research</a>
-			</li>
-			
-			<li class="nav-item mx-4">
-				
-				<a class="h5 nav-link text-primary " href="/publications/">Publications</a>
-			</li>
-			
-			<li class="nav-item mx-4">
-				
-				<a class="h5 nav-link text-primary " href="/team/">Team</a>
-			</li>
-			
-		</ul>
-	</div>
-</nav>
-  <div id="main" class="container mx-auto p-4">
+  <div id="lab-main" class="container bg-light text-dark mx-auto my-3">
     <div class="row">
-    <div class="col m-0 p-0">
+    <div class="col">
         <div class="row">
     <div class="col-sm-3 text-center">
         
-        <div class="p-2 bg-dark rounded">
+        <div class="p-2 bg-dark text-light">
             <div class="embed-responsive embed-responsive-1by1">
-                <img src="/theme/images/default.png" class="embed-responsive-item card-img-top rounded"
-                    style="object-fit: cover;" alt="">
+                <img src="/resources/images/supplemental/Grosbellet-2016-Environmental_Objects_for_Authoring_Procedural_Scenes-thumbnail.jpg" class="embed-responsive-item card-img-top" style="object-fit: cover;"
+                    alt="">
             </div>
         </div>
         <button class="btn btn-dark my-2" onclick="$('#bibtex').toggle()">BibTeX</button>
@@ -218,6 +239,11 @@
         <br>
         <p class="text-muted">
             Computer Graphics Forum - 2016
+            
+        </p>
+        <br>
+        <p class="text-muted">
+            Computer Graphics Forum - 2016
         </p>
         <hr>
         <p class="text-dark">Grosbellet, Francois, et al. “Environmental Objects for Authoring Procedural Scenes.” Computer Graphics Forum, vol. 35, no. 1, 2016, pp. 296–308, doi:10.1111/cgf.12726.</p>
@@ -232,8 +258,8 @@
   doi = {10.1111/cgf.12726},
   url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.12726},
   eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/cgf.12726},
-  owner = {Grosbellet16CGF.jpg},
-  pdf = {../papers/Grosbellet16CGF.pdf}
+  image = {Grosbellet-2016-Environmental_Objects_for_Authoring_Procedural_Scenes-thumbnail.jpg},
+  pdf = {Grosbellet-Computer_Graphics_Forum-2016-Environmental_Objects_for_Authoring_Procedural_Scenes.pdf}
 }
 </pre>
     </div>
@@ -243,9 +269,9 @@
 <div class="row">
     <div class="col">
         
-        <iframe src="/resources/papers/../papers/Grosbellet16CGF.pdf" type="application/pdf"
+        <iframe src="/resources/papers/Grosbellet-Computer_Graphics_Forum-2016-Environmental_Objects_for_Authoring_Procedural_Scenes.pdf" type="application/pdf"
             width="100%" height="1024px">
-            <a href="/resources/papers/../papers/Grosbellet16CGF.pdf">View PDF File</a>
+            <a href="/resources/papers/Grosbellet-Computer_Graphics_Forum-2016-Environmental_Objects_for_Authoring_Procedural_Scenes.pdf">View PDF File</a>
         </iframe>
         
     </div>
@@ -253,30 +279,35 @@
     </div>
 </div>
   </div>
-  <div class="footer container-fluid px-3 py-3 mt-auto bg-dark">
-	<div class="row justify-content-center">
-		<div class="col-sm-4">
-			<strong class="text-light">CGVLab Website</strong>
-			<p class="text-light m-0">Copyright &copy; 21 CGVLab. Site made with <a
-					href="https://jekyllrb.com">Jekyll</a>.
-			</p>
-			<p class="text-light">(<a href="http://wiki.cs.purdue.edu/cgvlab/doku.php">Internal Lab Wiki</a>)</p>
-		</div>
-		<div class="col-sm-4">
-			<strong class="text-light">Funding</strong>
-			<p class="text-light m-0">
-				XXX funding info XXX
-			</p>
-			<p class="text-light">We are part of the <a href="https://www.cs.purdue.edu/">Department of Computer Science</a> at  <a href="https://www.purdue.edu/">Purdue University</a>.
-			</p>
-		</div>
-		<div class="col-sm-4">
-			<strong class="text-light">Address</strong>
-			<p class="text-light m-0">Lawson Computer Science Building (LWSN) Room 3151, Purdue University</p>
-			<p class="text-light m-0">305 N. University Street, West Lafayette,
-				IN 47907</p>
-			<p class="text-light m-0">(<a href="https://goo.gl/maps/kWo74ytXx42Mv5TD8" target="_blank">Map</a>)</p>
-			
+  <div class="container-fluid px-3 py-3 mt-auto bg-dark text-light border-top border-primary lab-border lab-link-light">
+	<div class="footer container">
+		<div class="row justify-content-center">
+			<div class="col-sm">
+				<h5>CGVLab Website</h5>
+				<p>Copyright &copy; 2021 CGVLab. Site made with
+					<a href="https://jekyllrb.com">Jekyll</a>.
+				</p>
+				(<a href="http://wiki.cs.purdue.edu/cgvlab/doku.php">Internal Lab Wiki</a>)
+			</div>
+			<div class="col-sm mt-3 mt-sm-0">
+				<h5>Funding</h5>
+				<p>
+					XXX funding info XXX
+				</p>
+				We are part of the <a href="https://www.cs.purdue.edu/">Department of Computer Science</a> at <a href="https://www.purdue.edu/">Purdue University</a>.
+			</div>
+			<div class="col-sm mt-3 mt-sm-0">
+				<h5>Address</h5>
+				<p>
+					Lawson Computer Science Building (LWSN) Room 3151, Purdue University
+					<br>
+					305 N. University Street, West Lafayette,
+					IN 47907
+					<br>
+					(<a href="https://goo.gl/maps/kWo74ytXx42Mv5TD8" target="_blank">Map</a>)
+				</p>
+				
+			</div>
 		</div>
 	</div>
 </div>
