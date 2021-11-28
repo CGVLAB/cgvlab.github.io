@@ -45,7 +45,20 @@
 {"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://cgvlab.purdue.edu/theme/images/icon.png"}},"description":"Computer Graphics and Visualization Laboratory at Purdue University","@type":"WebPage","url":"https://cgvlab.purdue.edu/research/","headline":"Research","image":"https://cgvlab.purdue.edu/theme/images/icon.png","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-</head>
+
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-82472331-1', 'auto');
+	ga('send', 'pageview', { 'page': location.pathname + location.search + location.hash});
+	ga('set', 'anonymizeIp', false);
+    </script>
+    <!-- End Google Analytics -->
+    </head>
 
 <body class="bg-light text-dark">
   <div class="container-fluid bg-dark border-bottom border-primary lab-border">
@@ -108,7 +121,11 @@
     <div class="col">
         <h1 id="research">Research</h1>
 
-<p>XXX insert description of our research focus XXX</p>
+<h2 id="procedural--inverse-procedural-modeling">Procedural &amp; Inverse Procedural Modeling</h2>
+<p>A procedural model is a model represented by a code - for example, C++, Python, L-system, or a shape grammar. The objective of inverse procedural modeling is to find a code that would represent a given structure. We have presented several results in the generation of inverse procedural models for regular structures that are represented as L-systems. These 3D models of biological trees were encoded as parameters of a simulation system that generates them. We have also presented a successful application of IPM in cities and complex urban layouts. Another interesting problem is using inverse procedural models learned from existing structures in artistic design, such as interactive “brushing” of virtual worlds.</p>
+
+<h2 id="simulation-of-natural-phenomena">Simulation of Natural Phenomena</h2>
+<p>One of the long open problems in Computer Graphics is the visual simulation of Nature. Although the output of those simulations is 3D geometric models, an in-depth understanding of the underlying processes is usually necessary. We have a long history of simulating virtual erosion that generates visually plausible terrains. We have developed several models for river generations and terrain modeling in general. Another exciting area is a simulation of vegetation. Trees and plants are complex systems with a shape defined by competition for resources, among which light is the most important one. By incorporating competition for light into the tree developmental process (growth), we can simulate very complex tree shapes as well as ecosystems of trees competing for resources. We have also presented models of trees growing under the influence of wind.</p>
 
     </div>
 </div>
