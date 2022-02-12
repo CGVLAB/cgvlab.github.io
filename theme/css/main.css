@@ -2454,4 +2454,6 @@ a.lab-single-link-muted:hover { color: #6c757d !important; text-decoration: unde
 
 .lab-slider-control { opacity: 0.25; padding: 1.5rem; border-radius: 0.25rem; background-color: #000000; }
 
+.lab-header { border-left: 2px solid #999; }
+
 /*# sourceMappingURL=main.css.map */
