@@ -1735,6 +1735,12 @@
 <loc>https://www.cs.purdue.edu/cgvlab/www/publications/Lawson21CHB/</loc>
 </url>
 <url>
+<loc>https://www.cs.purdue.edu/cgvlab/www/publications/asadi2020computer/</loc>
+</url>
+<url>
+<loc>https://www.cs.purdue.edu/cgvlab/www/publications/jung2020smartphone/</loc>
+</url>
+<url>
 <loc>https://www.cs.purdue.edu/cgvlab/www/publications/Guo20ToG/</loc>
 </url>
 <url>
@@ -2473,6 +2479,10 @@
 <url>
 <loc>https://www.cs.purdue.edu/cgvlab/www/resources/papers/Arluck-CCCG-2018-Approximate_free_space_construction_maximum_clearance_path_planning.pdf</loc>
 <lastmod>2022-05-09T14:24:23-04:00</lastmod>
+</url>
+<url>
+<loc>https://www.cs.purdue.edu/cgvlab/www/resources/papers/Asadi-2020-Ergonomics-computer_vision_approach_classifying_isometric_grip.pdf</loc>
+<lastmod>2022-11-07T14:50:23-05:00</lastmod>
 </url>
 <url>
 <loc>https://www.cs.purdue.edu/cgvlab/www/resources/papers/Azofeifa-Informatics-2022-Systematic_Review_of_Multimodal_Human-Computer_Interaction.pdf</loc>
@@ -3397,6 +3407,10 @@
 <url>
 <loc>https://www.cs.purdue.edu/cgvlab/www/resources/papers/Joskowicz-Computer_aided_mechanical_design-2004-Robust_kinematic_design_of_planar_assemblies.pdf</loc>
 <lastmod>2021-11-16T11:31:22-05:00</lastmod>
+</url>
+<url>
+<loc>https://www.cs.purdue.edu/cgvlab/www/resources/papers/Jung-2020-JMM-Smartphone_lateral_flow_imaging_detection_bacteria.pdf</loc>
+<lastmod>2022-11-07T14:55:08-05:00</lastmod>
 </url>
 <url>
 <loc>https://www.cs.purdue.edu/cgvlab/www/resources/papers/Kaimo-IEEE_Transactions_on_Visualization_and_Computer_Graphics-2017-Error-Bounded_and_Feature_Preserving_Surface_Remeshing_with_Mini.pdf</loc>
